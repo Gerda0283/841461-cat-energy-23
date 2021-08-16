@@ -1,0 +1,36 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.intro__headline {
+  margin-top: 27px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: $basic_white;
+}
+
+.intro p {
+  @include margin-h-reset;
+  margin-bottom: 29px;
+  @include font-family-headline;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic_white;
+}
+
+@media (max-width: $mobile-width) {
+
+  .intro__brand-pack-img{
+    order: 2;
+  }
+
+  .intro__program-link {
+    width: 81vw;
+    order: 3;
+  }
+}

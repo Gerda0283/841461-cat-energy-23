@@ -1,0 +1,44 @@
+
+@media (max-width: $mobile-width-only) {
+
+  .progress-control__bar {
+    height: 14px;
+    background-color: $basic-white;
+    border: 1px solid $special_grey;
+    border-radius: 6px;
+  }
+
+  .progress-control__full-bar {
+    width: 50%;
+    height: 6px;
+    margin: 4px 6px;
+    background-color: $basic_green;
+    border-radius: 6px;
+  }
+
+  .progress-control__button {
+    position: absolute;
+    @include reset-btn;
+  }
+
+  .progress-control__button_left-slide {
+    top: 0;
+    left: 0;
+    width: 70px;
+    padding-top: 12px;
+    @include font-family-headline;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .progress-control__button_right-slide {
+    top: 0;
+    right: 0;
+    width: 70px;
+    padding-top: 12px;
+    @include font-family-headline;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+}

@@ -1,0 +1,9 @@
+.cat-weight {
+  background-color: $basic-light-grey-2;
+}
+
+.cat-weight .section-headline {
+  @include padding-min;
+  margin-top: 27px;
+  margin-bottom: 33px;
+}

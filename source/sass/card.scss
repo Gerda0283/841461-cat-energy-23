@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card__button {
+  order: 3;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.card__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+  width: 140px;
+  }
+}
+
+.card__img {
+  object-fit: contain;
+}
+
+.card-link {
+  order: 1;
+  padding-bottom: 19px;
+  align-self: flex-end;
+}

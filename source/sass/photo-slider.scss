@@ -1,0 +1,9 @@
+.photo-slider__item {
+  grid-area: 1/1/1/1;
+  display: block;
+  width: 100%;
+}
+
+.photo-slider__item_fat-cat {
+  z-index: 2;
+}

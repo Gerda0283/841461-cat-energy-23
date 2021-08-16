@@ -1,0 +1,14 @@
+.social-link svg {
+  fill: $special_dark-grey-2;
+
+  &:hover,
+  &:focus {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $special_dark-grey-2;
+    opacity: 0.3;
+  }
+}
+

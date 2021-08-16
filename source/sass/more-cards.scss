@@ -1,0 +1,92 @@
+.more-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.more-cards__caption {
+  order: 2;
+
+  p {
+    @include margin-h-reset;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    .division-headline {
+      width: auto;
+      text-align: center;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.more-cards__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  order: 1;
+  @include reset-btn;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $special_grey;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+    background-color: $basic_green;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $special_grey;
+    opacity: 0.3;
+  }
+}
+
+.button_more-product {
+  order:3;
+  @include reset-btn;
+  color: $special_dark-grey;
+  background-color: $basic-light-grey-3;
+
+  @media (max-width: $mobile-width) {
+    width: 278px;
+    padding: 10px;
+    margin-top: 21px;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $basic_white;
+    background-color: $basic_green;
+  }
+
+  &:active {
+    color: $basic_white-alfa;
+  }
+}

@@ -1,0 +1,31 @@
+.product-data {
+  display: flex;
+  flex-wrap: wrap;
+  order: 2;
+
+  @media (max-width: $mobile-width) {
+    width: 139px;
+    padding-bottom: 22px;
+  }
+}
+
+.product-data__tbody {
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile-width) {
+      width: 135px;
+    }
+  }
+
+  td {
+    width: 40%;
+    align-self: center;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}

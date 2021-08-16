@@ -1,0 +1,119 @@
+.main-nav {
+  position: relative;
+  width: 100%;
+  align-self: center;
+  min-height: 65px;
+  background-color: transparent;
+}
+
+.main-nav__button {
+  position: absolute;
+  display: block;
+  top: -63px;
+  right: 0;
+  z-index: 2;
+  width: 100px;
+  height: 47px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  z-index: 4;
+}
+
+.main-nav_closed .main-nav__button::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  width: 24px;
+  height: 2px;
+  background-color: $basic_black;
+  box-shadow: 0 8px 0 0 $basic_black, 0 16px 0 0 $basic_black;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav_closed .menu-list__item {
+    display: none;
+
+    &_сurrent {
+      display: block;
+    }
+  }
+
+  .menu-list__item:last-child {
+    border-bottom: 1px solid $basic-light-grey;
+  }
+
+  .main-nav_closed .menu-list__item {
+    display: none;
+  }
+
+  .main-nav_opened .main-nav__button {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      width: 24px;
+      height: 2px;
+      background-color: $basic_black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+  .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .main-nav_opened .main-nav__wrapper {
+    min-height: 25vh;
+  }
+  .main-nav_nojs .main-nav__button {
+    display: none;
+  }
+
+  .main-nav_nojs .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+  }
+
+  .main-nav_nojs .menu-list__item {
+    display: block;
+
+  }
+
+  .main-nav_nojs .menu-list__item_current a {
+    padding-right: 21px;
+    padding-left: 21px;
+    text-align: left;
+  }
+}
+
+.menu-list {
+  @include reset-list;
+}
+
+.menu-list__item a {
+  position: relative;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic_black;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic_white;
+  border-top: 1px solid $basic-light-grey;
+
+}

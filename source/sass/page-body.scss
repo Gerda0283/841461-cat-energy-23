@@ -1,0 +1,34 @@
+.page-body {
+  display: grid;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  color: $special_dark-grey;
+  background-color: $basic_white;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.page-body_inner .logo-img {
+
+   &:hover,
+   &:focus {
+     opacity: 0.8;
+   }
+
+   &:active {
+     opacity: 0.6;
+   }
+}

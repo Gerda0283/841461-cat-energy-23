@@ -1,0 +1,35 @@
+.main-header {
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+  width: 100%;
+  min-height: 65px;
+  z-index: 2;
+  background-color: $basic_white;
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url(../img/index/xs/cat-desktop_xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center 65px;
+  }
+
+}
+
+.main-header_inner {
+  height: 65px;
+  background-image: none;
+}
+
+.main-header__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: $basic_green-alfa;
+  z-index: 2;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 115%;
+  }
+}

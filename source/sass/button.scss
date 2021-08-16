@@ -1,0 +1,7 @@
+.button {
+  display: block;
+  @include link-style;
+  @include call-to-action-btn;
+  cursor: pointer;
+
+}

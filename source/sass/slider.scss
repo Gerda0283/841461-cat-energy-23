@@ -1,0 +1,7 @@
+.slider__list {
+  @include reset-list;
+  margin-top: 42px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

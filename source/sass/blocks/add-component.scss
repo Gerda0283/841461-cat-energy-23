@@ -1,6 +1,5 @@
 .add-component__tr {
   display: grid;
-  gap: 0;
   border-bottom: 1px solid $special_grey;
 
   &:first-child {
@@ -13,12 +12,6 @@
     h3, p {
       @include margin-h-reset;
     }
-  }
-
-  .button_btn-container-theme {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 16px;
   }
 
   @media (max-width: $mobile-width) {

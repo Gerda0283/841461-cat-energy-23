@@ -1,0 +1,18 @@
+
+.logo-img {
+  min-height: 58px;
+  padding-top: 15px;
+  z-index: 10;
+}
+
+.logo-img_inner-page-theme {
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,65 @@
+@mixin padding-min {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin padding-sm {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@mixin margin-h-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin centration {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: none;
+}
+
+@mixin link-style {
+  color: $basic_black;
+  text-decoration: none;
+  outline: transparent;
+}
+
+@mixin font-family-headline {
+  font-family: "Oswald", Arial, sans-serif;
+}
+
+@mixin call-to-action-btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 10px;
+  text-align: center;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic_white;
+  background-color: $basic_green;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    color: $basic_white-alfa;
+    background-color: $basic_green-2;
+  }
+}

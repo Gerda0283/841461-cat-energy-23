@@ -69,4 +69,13 @@
     position: absolute;
     top: 0;
   }
+
+  .main-nav_closed li {
+    display: none;
+  }
+
+  .main-nav_nojs .li {
+    display: block;
+
+  }
 }

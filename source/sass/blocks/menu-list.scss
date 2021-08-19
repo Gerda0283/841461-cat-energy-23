@@ -4,39 +4,25 @@
 
 @media (max-width: $mobile-width) {
 
-  .main-nav_closed .menu-list__item {
-    display: none;
-  }
-
   .menu-list__item:last-child {
     border-bottom: 1px solid $basic-light-grey;
-  }
-
-  .main-nav_nojs .menu-list__item {
-    display: block;
-
-  }
-
-  .main-nav_nojs .menu-list__item_current a {
-    padding-right: 21px;
-    padding-left: 21px;
-    text-align: left;
   }
 }
 
 .menu-list__item a {
   position: relative;
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-family: "Oswald", Arial, sans-serif;
-  font-size: 20px;
-  line-height: 20px;
   text-align: center;
-  color: $basic_black;
   text-transform: uppercase;
   text-decoration: none;
+  color: $basic_black;
   background-color: $basic_white;
-  border-top: 1px solid $basic-light-grey;
 
+  @media (max-width: $mobile-width) {
+    padding: 20px 21px;
+    font-size: 20px;
+    line-height: 20px;
+    border-top: 1px solid $basic-light-grey;
+  }
 }

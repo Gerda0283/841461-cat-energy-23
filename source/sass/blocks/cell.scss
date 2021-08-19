@@ -1,0 +1,62 @@
+.cell {
+
+  @media (max-width: $mobile-width) {
+    @include padding-min;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    @include padding-sm;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .cell_logo-theme {
+    grid-area: 1 / 1 / 1 / 1;
+    background-color: $basic_white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cell_logo-theme-inner {
+    border-bottom: 1px solid $basic-light-grey;
+  }
+
+  .cell_menu-theme {
+    grid-area: 1/1/1/1; /*grid-area: 2/1/2/1;*/
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cell_menu-theme-inner {
+
+    li.menu-list__item:first-child a {
+      border-top: none;
+    }
+
+  }
+
+  .cell_intro-theme {
+    grid-area: 3/1/3/1; /*grid-area: 2/1/2/1;*/
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cell_inner-first {
+    margin-top: 27px;
+    margin-bottom: 27px;
+  }
+
+  .cell_address-card {
+    display: grid;
+    grid-template-columns: 38% 50%;
+    column-gap: 25px;
+    align-items: center;
+  }
+
+}
+
+.cell_address-card-inner {
+  background-color: $basic-grey;
+}

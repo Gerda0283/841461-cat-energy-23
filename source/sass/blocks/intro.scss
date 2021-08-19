@@ -1,0 +1,59 @@
+.intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url(../img/index/xs/cat-desktop_xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+.intro__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: $basic_green-alfa;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 94.5%;
+  }
+}
+
+.intro__headline {
+  margin-top: 27px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: $basic_white;
+  z-index: 2;
+}
+
+.intro p {
+  @include margin-h-reset;
+  margin-bottom: 29px;
+  @include font-family-headline;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic_white;
+  z-index: 2;
+}
+
+@media (max-width: $mobile-width) {
+
+  .intro__brand-pack-img{
+    order: 2;
+    z-index: 2;
+  }
+
+  .intro__program-link {
+    width: 81vw;
+    order: 3;
+  }
+}

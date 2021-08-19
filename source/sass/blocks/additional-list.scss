@@ -1,0 +1,15 @@
+.additional-list {
+  @include reset-list;
+}
+
+.additional-list__item {
+  margin-bottom: 25px;
+  @include font-family-headline;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

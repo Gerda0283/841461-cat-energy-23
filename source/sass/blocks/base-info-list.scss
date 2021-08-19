@@ -1,0 +1,35 @@
+.base-info-list {
+  @include reset-list;
+}
+
+.base-info-list__item {
+  display: grid;
+  @include font-family-headline;
+  font-size: 16px;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 13px;
+
+
+  &:nth-child(1) {
+    grid-template-columns: 15% 80%;
+  }
+
+  &:nth-child(2) {
+    grid-template-columns: 25% 72%;
+  }
+
+  &:nth-child(3) {
+    grid-template-columns: 35% 62%;
+    margin-bottom: 0;
+  }
+}
+
+.base-info-list__input {
+  padding: 13px;
+  text-transform: uppercase;
+  border: 1px solid $special_light-grey;
+  border-radius: 0;
+  outline: transparent;
+}

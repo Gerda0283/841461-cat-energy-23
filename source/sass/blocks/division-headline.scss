@@ -1,0 +1,52 @@
+.division-headline {
+  @include margin-h-reset;
+  @include font-family-headline;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $basic_black;
+}
+
+.division-headline_product-type {
+  grid-area: 1/2;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 29px;
+  text-align: left;
+}
+
+.division-headline_address-card-theme {
+  @include margin-h-reset;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.division-headline_product-name {
+  @include margin-h-reset;
+
+  @media (max-width: $mobile-width) {
+    width: 94px;
+    margin-top: 19px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+   a {
+    @include link-style;
+    color: $basic_black-2;
+  }
+}
+
+.division-headline_more-cards-theme {
+  width: auto;
+  text-align: center;
+  padding-bottom: 8px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 16px;
+      line-height: 20px;
+  }
+}

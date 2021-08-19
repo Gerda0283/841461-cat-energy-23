@@ -1,0 +1,14 @@
+.main-header {
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+  width: 100%;
+  min-height: 65px;
+  z-index: 2;
+  background-color: $basic_white;
+}
+
+.main-header_inner {
+  min-height: 65px; /*height: 65px;*/
+  background-image: none;
+}

@@ -1,0 +1,81 @@
+.component__label {
+  position: relative;
+  margin-left: 45px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: -4px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special_grey;
+  }
+}
+
+.component__input:checked + .component__label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -34px;
+  width: 8px;
+  height: 16px;
+  border-right: 2px solid $basic_green;
+  border-bottom: 2px solid $basic_green;
+  transform: rotate(45deg);
+}
+
+.component__input:hover + .component__label::before  {
+  border: 1px solid $special_light-grey-2;
+}
+
+.component__input:hover + .component__label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -34px;
+  width: 8px;
+  height: 16px;
+  border-right: 2px solid $basic_green;
+  border-bottom: 2px solid $basic_green;
+  transform: rotate(45deg);
+}
+
+.component__input:disabled + .component__label::before {
+  opacity: 0.9;
+}
+
+.component__input:disabled + .component__label {
+  opacity: 0.3;
+  cursor: initial;
+}
+
+.component__input:checked:disabled + .component__label::after {
+  border-right: 2px solid $special_grey;
+  border-bottom: 2px solid $special_grey;
+  opacity: 0.9;
+}
+
+.component__input:checked:disabled + .component__label {
+  opacity: 0.3;
+  cursor: initial;
+}
+
+.component__input:hover:disabled + .component__label::before {
+  border: 1px solid $special_grey;
+}
+
+.component__input:hover:disabled + .component__label::after {
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.component__input:hover:checked:disabled + .component__label::before {
+  border: 1px solid $special_grey;
+}
+
+.component__input:hover:checked:disabled + .component__label::after {
+  border-right: 2px solid $special_grey;
+  border-bottom: 2px solid $special_grey;
+}

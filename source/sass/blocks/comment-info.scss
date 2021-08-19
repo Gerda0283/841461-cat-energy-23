@@ -1,0 +1,11 @@
+.comment-info {
+  width: 79vw;
+  padding: 13px;
+  @include font-family-headline;
+  font-size: 16px;
+  text-transform: uppercase;
+  align-items: center;
+  border: 1px solid $special_light-grey;
+  border-radius: 0;
+  outline: transparent;
+}

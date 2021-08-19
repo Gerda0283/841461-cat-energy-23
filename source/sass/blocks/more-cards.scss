@@ -1,0 +1,59 @@
+.more-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.more-cards__caption {
+  order: 2;
+
+  p {
+    @include margin-h-reset;
+    text-align: center;
+  }
+}
+
+.more-cards__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  order: 1;
+  @include reset-btn;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $special_grey;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+    background-color: $basic_green;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $special_grey;
+    opacity: 0.3;
+  }
+}

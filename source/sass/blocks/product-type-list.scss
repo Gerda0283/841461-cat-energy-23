@@ -1,0 +1,14 @@
+.product-type-list {
+  @include reset-list;
+  display: grid;
+
+  @media (max-width: $tablet-width) {
+    grid-column: (1fr, repeat);
+    margin-top: 22px;
+    row-gap: 20px;
+  }
+
+}
+.product-type-list__item {
+  @include padding-min;
+}

@@ -1,0 +1,10 @@
+.section-catalog {
+  grid-area: 1/1/1/1;
+
+  @media (max-width: $mobile-width) {
+    .container {
+      border-bottom: 1px solid $special_dark-grey-3;
+    }
+  }
+
+}

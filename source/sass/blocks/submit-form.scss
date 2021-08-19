@@ -1,0 +1,11 @@
+.submit-form__button {
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-top: 9px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+}

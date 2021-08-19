@@ -1,0 +1,16 @@
+.main-footer-logo {
+  display: flex;
+  justify-content: center;
+
+  .main-footer-logo__logo-text {
+    padding-top: 35px;
+    padding-bottom: 32px;
+    align-self: center;
+    text-align: center;
+
+    @media (max-width: $mobile-width-only) {
+      width: 98%;
+      border-bottom: 1px solid $basic-dark-grey;
+    }
+  }
+}

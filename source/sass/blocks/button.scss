@@ -1,0 +1,38 @@
+.button {
+  display: block;
+  @include link-style;
+  @include call-to-action-btn;
+  cursor: pointer;
+
+}
+
+.button_btn-container-theme {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.button_more-product {
+  order:3;
+  @include reset-btn;
+  color: $special_dark-grey;
+  background-color: $basic-light-grey-3;
+
+  @media (max-width: $mobile-width) {
+    width: 278px;
+    padding: 10px;
+    margin-top: 21px;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $basic_white;
+    background-color: $basic_green;
+  }
+
+  &:active {
+    color: $basic_white-alfa;
+  }
+}

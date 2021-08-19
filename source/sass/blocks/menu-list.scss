@@ -1,0 +1,28 @@
+.menu-list {
+  @include reset-list;
+}
+
+@media (max-width: $mobile-width) {
+
+  .menu-list__item:last-child {
+    border-bottom: 1px solid $basic-light-grey;
+  }
+}
+
+.menu-list__item a {
+  position: relative;
+  display: block;
+  font-family: "Oswald", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic_black;
+  background-color: $basic_white;
+
+  @media (max-width: $mobile-width) {
+    padding: 20px 21px;
+    font-size: 20px;
+    line-height: 20px;
+    border-top: 1px solid $basic-light-grey;
+  }
+}

@@ -1,0 +1,80 @@
+.feature {
+  @include reset-list;
+  display: grid;
+  margin-bottom: 42px;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+.feature__item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic_green;
+  }
+
+  p {
+    padding-left: 80px;
+    @include margin-h-reset;
+  }
+}
+
+.feature__item_icon-number-one::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 32px;
+  background-image: url(../img/svg/icon_leaf.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature__item_icon-number-two::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 29px;
+  height: 31px;
+  background-image: url(../img/svg/icon_tub.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature__item_icon-number-three::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 25px;
+  height: 30px;
+  background-image: url(../img/svg/icon_eat.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature__item_icon-number-four::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 32px;
+  height: 33px;
+  background-image: url(../img/svg/icon_alarm.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

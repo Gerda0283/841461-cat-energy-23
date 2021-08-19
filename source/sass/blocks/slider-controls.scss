@@ -1,0 +1,12 @@
+.slider-controls {
+  width: 228px;
+  margin-top: 23px;
+  margin-bottom: 25px;
+  @include centration;
+}
+
+.slider-controls__progress {
+  position: relative;
+  padding: 13px 71px;
+}
+

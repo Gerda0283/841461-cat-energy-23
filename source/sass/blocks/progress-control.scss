@@ -1,44 +1,128 @@
+.progress-control__bar {
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $special_grey;
+  border-radius: 6px;
+}
 
-@media (max-width: $mobile-width-only) {
+.progress-control__full-bar {
+  width: 50%;
+  height: 6px;
+  margin: 4px 6px;
+  background-color: $basic_green;
+  border-radius: 6px;
+}
+
+.progress-control__button {
+  position: absolute;
+  @include reset-btn;
+}
+
+.progress-control__button_left-slide {
+  top: 0;
+  left: 0;
+  width: 70px;
+  padding-top: 12px;
+  @include font-family-headline;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.progress-control__button_right-slide {
+  top: 0;
+  right: 0;
+  width: 70px;
+  padding-top: 12px;
+  @include font-family-headline;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 521px) {
 
   .progress-control__bar {
-    height: 14px;
-    background-color: $basic-white;
-    border: 1px solid $special_grey;
+    height: 6px;
+    background-color: $basic-dark-grey-2;
+    border: none;
     border-radius: 6px;
   }
 
   .progress-control__full-bar {
-    width: 50%;
-    height: 6px;
-    margin: 4px 6px;
+    position: absolute;
+    top: -5px;
+    left: 45%;
+    width: 8px;
+    height: 8px;
+    padding: 0;
     background-color: $basic_green;
-    border-radius: 6px;
+    border: 13px solid $basic_white;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px 1px $basic_black-alfa;
+    cursor: pointer;
   }
 
   .progress-control__button {
     position: absolute;
     @include reset-btn;
+    cursor: pointer;
   }
 
   .progress-control__button_left-slide {
     top: 0;
     left: 0;
     width: 70px;
-    padding-top: 12px;
+    padding-top: 2px;
     @include font-family-headline;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 29px;
     text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 11px;
+      width: 70%;
+      border-bottom: 1px dotted $basic_black;
+      opacity: 0.24;
+    }
   }
 
   .progress-control__button_right-slide {
     top: 0;
     right: 0;
     width: 70px;
-    padding-top: 12px;
+    padding-top: 2px;
     @include font-family-headline;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 29px;
     text-transform: uppercase;
-  }
 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 11px;
+      width: 70%;
+      border-bottom: 1px dotted $basic_black;
+      opacity: 0.24;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .progress-control__full-bar {
+    position: absolute;
+    top: -4px;
+    left: 45%;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    background-color: $basic_green;
+    border: 13px solid $basic_white;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px 1px $basic_black-alfa;
+    cursor: pointer;
+  }
 }

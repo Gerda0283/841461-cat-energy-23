@@ -1,3 +1,18 @@
 .cat-weight {
   background-color: $basic-light-grey-2;
+
+  @media (min-width: 521px) and (max-width: $mobile-width-only) {
+    background-color: $basic_white;
+    border-top: 1px solid $basic-light-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_white;
+    border-top: 1px solid $basic-light-grey;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    background-image: linear-gradient($basic_white 35%, $basic-light-grey-3 35%, $basic-light-grey-3 100%);
+    border-top: none;
+  }
 }

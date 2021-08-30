@@ -15,15 +15,19 @@
 .button_more-product {
   order:3;
   @include reset-btn;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
   color: $special_dark-grey;
   background-color: $basic-light-grey-3;
 
-  @media (max-width: $mobile-width) {
-    width: 278px;
-    padding: 10px;
+  @media (max-width: 349px) {
     margin-top: 21px;
     margin-bottom: 25px;
-    font-size: 16px;
+  }
+
+  @media (min-width: 350px) {
+    margin-top: 85px;
   }
 
   &:hover,
@@ -34,5 +38,26 @@
 
   &:active {
     color: $basic_white-alfa;
+  }
+}
+
+@media (min-width: 0) and (max-width: $sm-tablet-width) {
+
+  .button_visible-xs-theme {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 18px;
+    order: 4;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 521px) {
+
+  .button_visible-xs-theme {
+    display: none;
   }
 }

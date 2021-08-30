@@ -5,46 +5,156 @@
   line-height: 36px;
   font-weight: 400;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/ 2 span;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .section-headline_cat-weight-theme {
-  @include padding-min;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-width-only) {
+    @include padding-min;
     margin-top: 27px;
     margin-bottom: 33px;
+  }
+
+  @media (min-width: 321px) and (max-width: $sm-tablet-width) {
+    @include padding-s;
+  }
+
+  @media (min-width: 521px) and (max-width: $mobile-width-only) {
+    @include padding-sm;
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 47px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: 700px) and (max-width: $mobile-width-only) {
+    @include padding-sm;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include padding-sm;
+    margin-top: 43px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: 820px) {
+    @include padding-m-l;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    grid-area: 1/1/1/1;
+    @include padding-l;
+    align-self: flex-end;
+  }
+
+  @media (min-width: 1100px) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include padding-l;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: 1300px) {
+    @include padding-l-lg;
+  }
+
+  @media (min-width: 1440px) {
+    @include padding-lg;
   }
 }
 
 .section-headline_features-theme {
+
   @include padding-min;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-width-only) {
     margin-top: 27px;
     margin-bottom: 38px;
+  }
+
+  @media (min-width: 321px) and (max-width: $sm-tablet-width) {
+    @include padding-s;
+  }
+
+  @media (min-width: 521px) and (max-width: 699px) {
+    margin-top: 47px;
+    margin-bottom: 48px;
+    @include padding-sm;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (min-width: 700px) and (max-width: $mobile-width-only) {
+    margin-top: 47px;
+    margin-bottom: 48px;
+    @include padding-sm;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 32px;
+    @include padding-sm;
+  }
+
+  @media (min-width: 820px) {
+    @include padding-m-l;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    margin-top: 60px;
+    margin-bottom: 32px;
+    @include padding-l;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+    margin-bottom: 32px;
+    @include padding-l;
+  }
+
+  @media (min-width: 1300px) {
+    @include padding-l-lg;
+  }
+
+  @media (min-width: 1440px) {
+    @include padding-lg;
   }
 }
 
 .section-headline_additives-theme {
-  @include margin-h-reset;
-
-@media (max-width: $mobile-width) {
+    @include margin-h-reset;
     position: relative;
-    padding-top: 25px;
-    padding-left: 20px;
-    padding-right: 0;
-    padding-bottom: 36px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
     font-size: 24px;
     line-height: 24px;
 
     &::after {
       content: "";
-      position: absolute;
-      top: 40px;
-      right: 0;
-      width: 53px;
+      width: 100%;;
       height: 2px;
+      margin-top: 14px;
+      margin-left: 25px;
       background-color: $basic_green;
+    }
+
+  @media (min-width: 350px) {
+    font-size: 30px;
+    line-height: 30px;
+
+    &::after {
+      margin-top: 17px;
     }
   }
 

@@ -14,7 +14,7 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $sm-tablet-width) {
     grid-template-columns: 80% 20%;
     grid-template-rows: auto;
 

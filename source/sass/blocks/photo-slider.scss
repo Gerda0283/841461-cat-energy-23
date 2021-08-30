@@ -2,6 +2,48 @@
   grid-area: 1/1/1/1;
   display: block;
   width: 100%;
+  align-self: flex-end;
+}
+
+.photo-slider__item_fat-cat img,
+.photo-slider__item_thin-cat img {
+  object-fit: contain;
+}
+
+@media (min-width: 521px) and (max-width: $mobile-width-only) {
+  .photo-slider__item_fat-cat {
+
+    img {
+      width: 521px;
+      height: 400px;
+    }
+  }
+
+  .photo-slider__item_thin-cat {
+
+    img {
+      width: 419px;
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-slider__item_fat-cat {
+
+    img {
+      width: 677px;
+      height: 520px;
+    }
+  }
+
+  .photo-slider__item_thin-cat {
+
+    img {
+      width: 545px;
+      height: 520px;
+    }
+  }
 }
 
 .photo-slider__item_fat-cat {

@@ -1,7 +1,62 @@
+.slider {
+  position: relative;
+
+  @media (min-width: 521px) and (max-width: $mobile-width-only) {
+    background-image: linear-gradient($basic_white 35%, $basic-light-grey-2 35%, $basic-light-grey-2 100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: 3/2 span;
+    background-image: linear-gradient($basic_white 35%, $basic-light-grey-2 35%, $basic-light-grey-2 100%);
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    grid-area: 1/2/3/2;
+    padding-bottom: 23px;
+    align-self: end;
+    background-image: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30%;
+      bottom: 0;
+      right: 0;
+      width: 49%;
+      background-image: linear-gradient($basic-transparent 6.5%, $basic-light-grey-2 6.5%, $basic-light-grey-2 100%);
+    }
+  }
+
+  @media (min-width: 1100px) {
+
+    &::before {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &::before {
+      width: 50.5%;
+    }
+  }
+
+  @media (min-width: 1540px) {
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
 .slider__list {
   @include reset-list;
   margin-top: 42px;
   display: grid;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 11px;
+  }
 }

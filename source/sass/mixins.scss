@@ -1,11 +1,50 @@
+@mixin padding-hor-reset {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @mixin padding-min {
   padding-left: 20px;
   padding-right: 20px;
 }
 
+@mixin padding-s {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 @mixin padding-sm {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin padding-md {
   padding-left: 50px;
   padding-right: 50px;
+}
+@mixin padding-l {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@mixin padding-m-l {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@mixin padding-l-lg {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@mixin padding-lg {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+@mixin padding-extra {
+  padding-left: 160px;
+  padding-right: 160px;
 }
 
 @mixin margin-h-reset {
@@ -41,13 +80,9 @@
 }
 
 @mixin call-to-action-btn {
-  margin-left: auto;
-  margin-right: auto;
   padding: 8px 10px;
   text-align: center;
   font-family: "Oswald", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   text-transform: uppercase;
   color: $basic_white;
   background-color: $basic_green;
@@ -62,4 +97,8 @@
     color: $basic_white-alfa;
     background-color: $basic_green-2;
   }
+}
+
+@mixin tablet-width-btn {
+  padding: 14px 26px;
 }

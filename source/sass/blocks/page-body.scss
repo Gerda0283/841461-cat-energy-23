@@ -10,14 +10,14 @@
   color: $special_dark-grey;
   background-color: $basic_white;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-width-only) {
     font-size: 14px;
     line-height: 18px;
   }
 
-  @media (min-width: $sm-desktop-width) {
+  @media (min-width: 700px) {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
   }
 }
 

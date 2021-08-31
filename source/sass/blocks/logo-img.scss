@@ -1,8 +1,28 @@
 
 .logo-img {
-  min-height: 58px;
-  padding-top: 15px;
-  z-index: 10;
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: $mobile-width-only) {
+    min-height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  img {
+
+    @media (min-width: $tablet-width) {
+      width: 174px;
+      height: 52px;
+    }
+
+    @media (min-width: $sm-desktop-width) {
+      width: 202px;
+      height: 59px;
+    }
+  }
+
 }
 
 .logo-img_inner-page-theme {

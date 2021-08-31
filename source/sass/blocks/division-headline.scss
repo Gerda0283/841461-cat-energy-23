@@ -9,23 +9,80 @@
 }
 
 .division-headline_product-type {
-  grid-area: 1/2;
-  width: 90%;
+
   margin-top: 30px;
   margin-bottom: 29px;
   text-align: left;
+
+  @media (min-width: 321px) and  (max-width: $sm-tablet-width) {
+    grid-area: 1/2;
+    width: 90%;
+  }
+
+  @media (min-width: 521px) and (max-width: $mobile-width-only) {
+    grid-area: 1/2 span;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 700px) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1;
+    margin-top: 77px;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    grid-area: 1/2;
+    width: 100%;
+    margin-bottom: 53px;
+    font-size: 30px;
+  }
+
+  @media (min-width: 1100px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .division-headline_address-card-theme {
+
   @include margin-h-reset;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: 321px) and (max-width: $mobile-width-only) {
+    width: 100px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: 1100px) {
+    width: 200px;
+  }
 }
 
 .division-headline_product-name {
   @include margin-h-reset;
 
-  @media (max-width: $mobile-width) {
+  a {
+    @include link-style;
+    color: $basic_black-2;
+  }
+
+  @media (max-width: 349px) {
     width: 94px;
     margin-top: 19px;
     margin-bottom: 18px;
@@ -34,9 +91,12 @@
     text-align: left;
   }
 
-   a {
-    @include link-style;
-    color: $basic_black-2;
+  @media (min-width: 350px) {
+    width: 140px;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
   }
 }
 
@@ -45,8 +105,15 @@
   text-align: center;
   padding-bottom: 8px;
 
-    @media (max-width: $mobile-width) {
-      font-size: 16px;
-      line-height: 20px;
+  @media (max-width: 349px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 350px) {
+    width: 170px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 15px;
   }
 }

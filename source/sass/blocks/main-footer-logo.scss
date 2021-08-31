@@ -2,14 +2,36 @@
   display: flex;
   justify-content: center;
 
-  .main-footer-logo__logo-text {
-    padding-top: 35px;
-    padding-bottom: 32px;
-    align-self: center;
-    text-align: center;
+  @media (min-width: 700px) {
+    justify-content: flex-start;
+  }
 
-    @media (max-width: $mobile-width-only) {
-      width: 98%;
+  @media (min-width: 820px) and (max-width: 992px) {
+    padding-right: 0;
+  }
+
+  @media (min-width: 1540px) {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  .main-footer-logo__logo-text {
+    display: flex;
+    width: 100%;
+    min-height: 95px;
+    align-content: center;
+
+    img {
+      display: block;
+      margin: auto;
+
+      @media (min-width: 700px) {
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 699px) {
+      align-self: center;
       border-bottom: 1px solid $basic-dark-grey;
     }
   }

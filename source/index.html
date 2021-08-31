@@ -14,10 +14,15 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="container">
+      <div class="container container_main-header-theme">
         <div class="cell cell_logo-theme">
           <a class="main-header__logo logo-img">
-            <img src="img/logo_cat-energy-img_xs.svg" width="191" height="38" alt="Логотип «Кэт энерджи»"><!--Реализация через svg, которое будет в спрайте-->
+            <picture>
+              <source media="(min-width: 1640px)" srcset="img/logo_cat-energy-img_extra.svg">
+              <source media="(min-width: 993px)" srcset="img/logo_cat-energy-img_md.svg">
+              <source media="(min-width: 521px)" srcset="img/logo_cat-energy-img_sm.svg">
+              <img width="191" height="38" src="img/logo_cat-energy-img_xs.svg" alt="Логотип Кэт энерджи" >
+           </picture>
           </a>
         </div>
         <div class="cell cell_menu-theme">
@@ -40,13 +45,27 @@
             </div>
           </nav>
         </div>
+        <div class="cell cell_intro-bg-image">
+          <div class="intro-bg-image">
+            <div class="intro-bg-image__overlay"></div>
+          </div>
+        </div>
         <div class="cell cell_intro-theme">
           <div class="intro">
-            <div class="intro__overlay"></div>
-            <h1 class="main-headline intro__headline">Функциональное питание для котов</h1>
-            <p>Занялся собой? Займись котом!</p>
-            <a class="intro__program-link button" href="form.html">подобрать программу</a>
-            <img class="intro__brand-pack-img visible-xs" src="img/index/xs/cat_energy_pro_main-pack-image_xs.png" width="280" height="270" alt="Большая брендированная упаковка кошачьего питания">
+            <div class="intro__text">
+              <h1 class="main-headline intro__headline">Функциональное питание для котов</h1>
+              <p>Занялся собой? Займись котом!</p>
+              <a class="intro__program-link button" href="form.html">подобрать программу</a>
+            </div>
+            <div class="intro__brand-pack-img">
+              <picture>
+                <source media="(min-width: 993px)" srcset="img/index/md/cat_energy_pro_main-pack-image_md.png">
+                <source media="(min-width: 768px)" srcset="img/index/sm/cat_energy_pro_main-pack-image_sm.png">
+                <source media="(min-width: 321px)" srcset="img/index/md/cat_energy_pro_main-pack-image_md.png">
+                <img width="280" height="270" src="img/index/xs/cat_energy_pro_main-pack-image_xs.png" alt="Логотип Кэт энерджи" alt="Большая брендированная упаковка кошачьего питания">
+              </picture>
+            </div>
+            <a class="button button_visible-xs-theme" href="form.html">подобрать программу</a>
           </div>
         </div>
       </div>
@@ -55,16 +74,16 @@
       <section class="product-type">
         <div class="container">
           <h2 class="visually-hidden">Классификация продукции</h2>
-          <div class="cell">
+          <div class="cell cell_product-type-theme">
             <ul class="product-type-list">
               <li class="product-type-list__item product-define product-define_weight-loss">
                 <h3 class="division-headline division-headline_product-type">Похудение</h3>
-                <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat&nbsp;Energy&nbsp;Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="product-define__link" href="catalog.html">каталог slim</a>
               </li>
               <li class="product-type-list__item product-define product-define_weight-gain">
                 <h3 class="division-headline division-headline_product-type">Набор массы</h3>
-                <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat&nbsp;Energy&nbsp;Pro поможет вашему коту нарастить необходимые мышцы!</p>
                 <a class="product-define__link" href="catalog.html">каталог pro</a>
               </li>
             </ul>
@@ -78,22 +97,26 @@
             <ul class="features-list feature">
               <li class="feature__item feature__item_icon-number-one">
                 <p>Функциональное питание содержит только полезные питательные вещества.</p>
+                <span>1</span>
               </li>
               <li class="feature__item feature__item_icon-number-two">
                 <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+                <span>2</span>
               </li>
               <li class="feature__item feature__item_icon-number-three">
                 <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+                <span>3</span>
               </li>
               <li class="feature__item feature__item_icon-number-four">
-                <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+                <p>Уже через месяц наслаждайтесь изменениями к лучшему<br /> вашего питомца!</p>
+                <span>4</span>
               </li>
             </ul>
           </div>
         </div>
       </section>
       <section class="cat-weight">
-        <div class="container">
+        <div class="container container_cat-weight-theme">
           <h2 class="section-headline section-headline_cat-weight-theme">Живой пример</h2>
           <div class="cell cat-weight-results">
             <p class="cat-weight-results__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat&nbsp;Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
@@ -108,23 +131,29 @@
                 <p>затрачено<br /> времени</p>
               </li>
               <li class="weight-time-list__item  weight-time-list__item_costs-theme">
-                <span>Затраты на питание: 15 000 руб.</span>
+                <span>Затраты на питание:<!--&emsp;&emsp;&emsp;&emsp;--> 15 000 руб.</span>
               </li>
             </ul>
           </div>
           <div class="cell slider">
             <ul class="slider__list photo-slider">
               <li class="photo-slider__item photo-slider__item_fat-cat">
-                <img class="visible-xs" src="img/index/xs/cat_fat_xs.png" width="251" height="240" alt="Толстый кот">
+                <picture>
+                  <source media="(min-width: 521px)" srcset="img/index/sm/cat_fat_sm.png">
+                  <img width="251" height="240" src="img/index/xs/cat_fat_xs.png" alt="Толстый кот Шрёдингера" />
+                </picture>
               </li>
               <li class="photo-slider__item photo-slider__item_thin-cat">
-                <img class="visible-xs" src="img/index/xs/cat_thin_xs.png" width="251" height="240" alt="Худой кот">
+                <picture>
+                  <source media="(min-width: 521px)" srcset="img/index/sm/cat_thin_sm.png">
+                  <img width="251" height="240" src="img/index/xs/cat_thin_xs.png" alt="Худой кот Шрёдингера" />
+                </picture>
               </li>
             </ul>
             <div class="slider-controls">
               <div class="slider-controls__progress progress-control">
                 <div class="progress-control__bar">
-                  <div class="progress-control__full-bar"></div>
+                  <div tabindex="0" class="progress-control__full-bar"></div>
                   <button class="progress-control__button progress-control__button_left-slide">было</button>
                   <button class="progress-control__button progress-control__button_right-slide">стало</button>
                 </div>
@@ -136,7 +165,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__contacts">
-        <div class="container">
+        <div class="container container_address-card-theme">
           <div class="cell address-card cell_address-card">
               <h3 class="division-headline division-headline_address-card-theme">Приглашаем к сотрудничеству дилеров!</h3>
               <p class="address-card__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -145,18 +174,18 @@
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6033013998237!2d30.32136833545218!3d59.938724543317974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbg!4v1628524693742!5m2!1sru!2sbg" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="container">
+        <div class="container container_main-footer-theme">
           <div class="cell main-footer-logo">
             <a class="main-footer-logo__logo-text">
-              <img class="image-text" src="img/logo_cat-energy_footer.svg" width="128" height="24" alt="Логотекст «Кэт энерджи»"><!--Реализация через svg спрайт-->
+              <img src="img/logo_cat-energy_footer.svg" width="128" height="24" alt="Логотекст «Кэт энерджи»">
             </a>
           </div>
-          <div class="cell">
+          <div class="cell cell_social-theme">
             <ul class="social-list">
               <li class="social-list__item">
                 <a class="social-link social-link_vkontakte" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Мы в Вконтакте</span>
-                  <svg width="23" height="16" viewBox="0 0 23 16" xmlns="http://www.w3.org/2000/svg"><path d="M.07 3.993c0-.622.423-.957 1.27-1.006l3.26.018c.22 0 .365.091.438.274.336.915.711 1.704 1.127 2.369.416.664.96 1.43 1.63 2.295.059.11.154.165.285.165a.276.276 0 00.24-.128l.067-.201.021-3.165c0-.219-.062-.365-.186-.438-.124-.074-.353-.128-.689-.165-.263-.037-.394-.17-.394-.402 0-.05.007-.086.022-.11.306-.793 1.182-1.189 2.626-1.189l1.226-.018c.554 0 1.014.116 1.379.347.364.232.547.598.547 1.098v4.151a.562.562 0 00.284.092c.22 0 .409-.11.57-.33 1.604-1.877 2.472-3.133 2.604-3.767a.29.29 0 01.044-.092c.102-.182.27-.34.503-.475.233-.134.438-.226.613-.274a.507.507 0 01.197-.037h3.392l.219.018c.292 0 .518.116.678.348a.63.63 0 01.12.238c.022.085.037.17.044.256.008.085.011.134.011.146v.128c-.102.5-.36 1.033-.777 1.6-.415.567-.944 1.18-1.586 1.838-.642.659-1.044 1.092-1.204 1.299-.131.146-.197.28-.197.402 0 .098.058.208.175.33l3.195 3.365a.939.939 0 01.263.64c0 .28-.131.512-.394.695a1.826 1.826 0 01-.941.31l-.372.02h-3.327a.794.794 0 00-.087.008.802.802 0 01-.088.01c-.32 0-.62-.116-.897-.348-.102-.098-.788-.817-2.057-2.158a1.106 1.106 0 00-.307-.238c-.058.195-.135.475-.23.841-.094.366-.164.628-.207.787l-.066.31c-.146.427-.452.684-.92.769l-.306.018H9.743c-1.21 0-2.418-.463-3.622-1.39-1.203-.927-2.287-2.124-3.25-3.594-.963-1.469-1.86-3.18-2.691-5.13a1.254 1.254 0 01-.11-.53zM13.223 8.73a1.66 1.66 0 01-.831-.21c-.248-.14-.372-.333-.372-.577V3.737c0-.244-.073-.418-.22-.522-.145-.103-.4-.155-.765-.155l-1.248.036c-.627 0-1.101.092-1.422.275.642.256.963.67.963 1.243v3.22c-.03.304-.175.557-.438.758a1.405 1.405 0 01-.875.302c-.438 0-.774-.177-1.007-.53C5.87 6.925 5.024 5.559 4.469 4.267l-.197-.476-2.91-.018c-.19 0-.296.01-.318.028-.022.018-.033.07-.033.155 0 .11.015.226.044.348l.46 1.024c1.225 2.646 2.556 4.73 3.994 6.255 1.437 1.524 2.848 2.286 4.234 2.286h2.189c.088 0 .153-.021.197-.064.044-.043.08-.125.11-.247l.043-.183.416-1.61c.117-.219.219-.365.306-.438a.86.86 0 01.57-.201c.35 0 .707.176 1.072.53l1.86 1.975c.117.159.24.238.372.238h3.611c.438 0 .657-.091.657-.274a.312.312 0 00-.066-.183l-3.173-3.31c-.248-.257-.372-.531-.372-.824 0-.292.116-.573.35-.841.19-.244.558-.65 1.105-1.216a28.203 28.203 0 001.434-1.591c.408-.494.678-.942.81-1.345l.065-.237a.243.243 0 01-.022-.12c0-.054-.007-.1-.022-.137H17.82a1.199 1.199 0 00-.525.33l-.131.347c-.365.841-1.32 2.14-2.867 3.896a1.672 1.672 0 01-1.073.366z" /></svg>
+                  <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.07 3.993c0-.622.423-.957 1.27-1.006l3.26.018c.22 0 .365.091.438.274.336.915.711 1.704 1.127 2.369.416.664.96 1.43 1.63 2.295.059.11.154.165.285.165a.276.276 0 00.24-.128l.067-.201.021-3.165c0-.219-.062-.365-.186-.438-.124-.074-.353-.128-.689-.165-.263-.037-.394-.17-.394-.402 0-.05.007-.086.022-.11.306-.793 1.182-1.189 2.626-1.189l1.226-.018c.554 0 1.014.116 1.379.347.364.232.547.598.547 1.098v4.151a.562.562 0 00.284.092c.22 0 .409-.11.57-.33 1.604-1.877 2.472-3.133 2.604-3.767a.29.29 0 01.044-.092c.102-.182.27-.34.503-.475.233-.134.438-.226.613-.274a.507.507 0 01.197-.037h3.392l.219.018c.292 0 .518.116.678.348a.63.63 0 01.12.238c.022.085.037.17.044.256.008.085.011.134.011.146v.128c-.102.5-.36 1.033-.777 1.6-.415.567-.944 1.18-1.586 1.838-.642.659-1.044 1.092-1.204 1.299-.131.146-.197.28-.197.402 0 .098.058.208.175.33l3.195 3.365a.939.939 0 01.263.64c0 .28-.131.512-.394.695a1.826 1.826 0 01-.941.31l-.372.02h-3.327a.794.794 0 00-.087.008.802.802 0 01-.088.01c-.32 0-.62-.116-.897-.348-.102-.098-.788-.817-2.057-2.158a1.106 1.106 0 00-.307-.238c-.058.195-.135.475-.23.841-.094.366-.164.628-.207.787l-.066.31c-.146.427-.452.684-.92.769l-.306.018H9.743c-1.21 0-2.418-.463-3.622-1.39-1.203-.927-2.287-2.124-3.25-3.594-.963-1.469-1.86-3.18-2.691-5.13a1.254 1.254 0 01-.11-.53zM13.223 8.73a1.66 1.66 0 01-.831-.21c-.248-.14-.372-.333-.372-.577V3.737c0-.244-.073-.418-.22-.522-.145-.103-.4-.155-.765-.155l-1.248.036c-.627 0-1.101.092-1.422.275.642.256.963.67.963 1.243v3.22c-.03.304-.175.557-.438.758a1.405 1.405 0 01-.875.302c-.438 0-.774-.177-1.007-.53C5.87 6.925 5.024 5.559 4.469 4.267l-.197-.476-2.91-.018c-.19 0-.296.01-.318.028-.022.018-.033.07-.033.155 0 .11.015.226.044.348l.46 1.024c1.225 2.646 2.556 4.73 3.994 6.255 1.437 1.524 2.848 2.286 4.234 2.286h2.189c.088 0 .153-.021.197-.064.044-.043.08-.125.11-.247l.043-.183.416-1.61c.117-.219.219-.365.306-.438a.86.86 0 01.57-.201c.35 0 .707.176 1.072.53l1.86 1.975c.117.159.24.238.372.238h3.611c.438 0 .657-.091.657-.274a.312.312 0 00-.066-.183l-3.173-3.31c-.248-.257-.372-.531-.372-.824 0-.292.116-.573.35-.841.19-.244.558-.65 1.105-1.216a28.203 28.203 0 001.434-1.591c.408-.494.678-.942.81-1.345l.065-.237a.243.243 0 01-.022-.12c0-.054-.007-.1-.022-.137H17.82a1.199 1.199 0 00-.525.33l-.131.347c-.365.841-1.32 2.14-2.867 3.896a1.672 1.672 0 01-1.073.366z" /></svg>
                 </a>
               </li>
               <li class="social-list__item">

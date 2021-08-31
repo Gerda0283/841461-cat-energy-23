@@ -2,16 +2,40 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding-top: 22px;
-  padding-bottom: 28px;
+
+  @media (max-width: 699px) {
+    min-height: 78px;
+  }
+
+  @media (min-width: 800px) and (max-width: 992px) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 1540px) {
+    padding-right: 0;
+  }
 }
 
 .copyright__link {
   position: relative;
-  width: 98%;
+  width: 100%;
   align-self: center;
   @include link-style;
   color: $special_dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: 820px) {
+    display: flex;
+    width: 163px;
+    justify-content: space-between;
+  }
 
   &::before {
     content: "";
@@ -24,6 +48,15 @@
     background-image: url(../img/svg/htmlacademy.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      right: 0;
+      left: 158px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: auto;
+    }
   }
 
   &:hover::before,

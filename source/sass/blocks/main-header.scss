@@ -2,10 +2,50 @@
   grid-row: 1;
   grid-column: 1;
   position: relative;
-  width: 100%;
+  max-width: 100%;
   min-height: 65px;
-  z-index: 2;
+  padding-top: 16px;
   background-color: $basic_white;
+  z-index: 2;
+
+  @media (min-width: 700px) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: 1540px) {
+    position: relative;
+    grid-area: 1/1/2/2;
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 0;
+    background-image: url(../img/index/md/cat-desktop_md.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      bottom: 0;
+      background-color: $basic_green-alfa;
+    }
+  }
+
+  @media (min-width: 1640px) {
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+      width: 100%;
+    }
+  }
 }
 
 .main-header_inner {

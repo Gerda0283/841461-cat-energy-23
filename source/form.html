@@ -17,7 +17,10 @@
       <div class="container">
         <div class="cell cell_logo-theme cell_logo-theme-inner">
           <a class="main-header__logo logo-img logo-img_inner-page-theme" href="index.html">
-            <img src="img/logo_cat-energy-img_xs.svg" width="191" height="38" alt="Логотип «Кэт энерджи»"><!--Реализация через svg, которое будет в спрайте-->
+            <picture>
+              <source media="(min-width: 767px)" srcset="img/logo_cat-energy-img_sm.svg">
+              <img width="191" height="38px" src="img/logo_cat-energy-img_xs.svg" alt="Логотип Кэт энерджи" >
+           </picture>
           </a>
         </div>
         <div class="cell cell_menu-theme cell_menu-theme-inner">
@@ -150,8 +153,8 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__contacts">
-        <div class="container">
-          <div class="cell address-card cell_address-card cell_address-card-inner">
+        <div class="container container_address-card-theme">
+          <div class="cell address-card cell_address-card">
               <h3 class="division-headline division-headline_address-card-theme">Приглашаем к сотрудничеству дилеров!</h3>
               <p class="address-card__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
@@ -159,13 +162,13 @@
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6033013998237!2d30.32136833545218!3d59.938724543317974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbg!4v1628524693742!5m2!1sru!2sbg" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="container">
+        <div class="container container_main-footer-theme">
           <div class="cell main-footer-logo">
             <a class="main-footer-logo__logo-text">
-              <img class="image-text" src="img/logo_cat-energy_footer.svg" width="128" height="24" alt="Логотекст «Кэт энерджи»"><!--Реализация через svg спрайт-->
+              <img src="img/logo_cat-energy_footer.svg" width="128" height="24" alt="Логотекст «Кэт энерджи»">
             </a>
           </div>
-          <div class="cell">
+          <div class="cell cell_social-theme">
             <ul class="social-list">
               <li class="social-list__item">
                 <a class="social-link social-link_vkontakte" href="https://vk.com/htmlacademy">

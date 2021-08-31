@@ -1,15 +1,27 @@
 .social-list {
+  min-height: 63px;
   @include reset-list;
   display: flex;
-  padding-top: 35px;
-  padding-bottom: 32px;
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
 
-  @media (max-width: $mobile-width-only) {
-    width: 98%;
+  @media (max-width: 699px) {
+    align-items: center;
     border-bottom: 1px solid $basic-dark-grey;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: 700px) {
+    align-content: center;
+    width: 100%;
+  }
+
+  @media (min-width: 1440px) {
+    justify-content: center;
   }
 }
 
@@ -17,4 +29,16 @@
   display: block;
   width: 20%;
   text-align: center;
+
+  @media (min-width: 521px) and (max-width: 699px) {
+    width: 12%;
+  }
+
+  @media (min-width: $sm-desktop-width) and (max-width: 1199px) {
+    width: 15%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 13%;
+  }
 }

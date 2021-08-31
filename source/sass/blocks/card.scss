@@ -4,17 +4,29 @@
   align-items: center;
   flex-wrap: wrap;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: 349px) {
     padding-top: 19px;
+  }
+
+  @media (min-width: 350px) {
+    flex-direction: column;
+    min-width: 310px;
   }
 }
 
 .card__button {
   order: 3;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: 349px) {
     width: 100%;
     margin-bottom: 25px;
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+
+  @media (min-width: 350px) {
+    width: 230px;
+    padding: 10px 10px;
     font-size: 16px;
   }
 
@@ -29,17 +41,34 @@
   justify-content: center;
   align-items: center;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: 349px) {
   width: 140px;
   }
 }
 
 .card__img {
   object-fit: contain;
+
+  @media (min-width: 350px) {
+
+    &:nth-child(2n) {
+      width: 168px;
+      height: 206px;
+    }
+
+    &:nth-child(2n+1) {
+      width: 161px;
+      height: 172px;
+    }
+  }
 }
 
 .card__link {
   order: 1;
   padding-bottom: 19px;
   align-self: flex-end;
+
+  @media (min-width: 350px) {
+    align-self: center;
+  }
 }

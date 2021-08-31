@@ -1,4 +1,10 @@
-.main-footer__contacts {
+.main-footer {
   grid-row: 3;
+}
+
+.main-footer__contacts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
   background-color: $basic-light-grey-3;
 }

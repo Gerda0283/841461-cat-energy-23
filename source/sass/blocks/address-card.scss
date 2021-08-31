@@ -2,5 +2,53 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: $basic_white;
+
+  p {
+    line-height: 20px;
+
+    @media (min-width: 321px) and (max-width: $mobile-width-only) {
+      width: 140px;
+      text-align: right;
+    }
+
+    @media (min-width: 700px) {
+      text-align: right;
+    }
+
+    @media (min-width: $sm-desktop-width) {
+      width: 180px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    grid-area: 1/2 span;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: 820px) {
+    @include padding-m-l;
+  }
+
+  @media (max-width: 992px) {
+    background-color: $basic-light-grey-3;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    grid-area: 1/1 span;
+    width: 450px;
+    margin-left: 60px;
+    column-gap: 80px;
+    padding-top: 40px;
+    @include padding-l;
+  }
+
+  @media (min-width: 1300px) {
+    margin-left: 100px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 110px;
+  }
 }
 

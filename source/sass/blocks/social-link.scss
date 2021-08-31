@@ -12,3 +12,26 @@
   }
 }
 
+@media (min-width: 700px) {
+
+  .social-link_vkontakte {
+    svg {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+  .social-link_instagram {
+    svg {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  .social-link_facebook {
+    svg {
+      width: 13px;
+      height: 27px;
+    }
+  }
+}

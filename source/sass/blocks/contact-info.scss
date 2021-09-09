@@ -1,6 +1,11 @@
 .contact-info {
   @include reset-list;
   margin-bottom: 23px;
+
+  @media (min-width: $sm-desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contact-info__item {
@@ -12,13 +17,58 @@
   justify-content: space-between;
   margin-bottom: 13px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    justify-content: start;
+    width: 50%;
+  }
+
+  @media (min-width: $xl-width) {
+    width: 569px;
+  }
 
   &:nth-child(1) {
     grid-template-columns: 20% 75%;
+
+    @media (min-width: $sm-tablet-width) {
+      grid-template-columns: 15% 85%;
+    }
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 13% 86%;
+    }
+
+    @media (min-width: $sm-desktop-width) {
+      grid-template-columns: 17% 75%;
+    }
+
+    @media (min-width: $xl-width) {
+      grid-template-columns: 14% 86%;
+    }
   }
 
   &:nth-child(2) {
     grid-template-columns: 25% 72%;
+
+    @media (min-width: $sm-tablet-width) {
+      grid-template-columns: 18% 82%;
+    }
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 17% 83%;
+    }
+
+    @media (min-width: $sm-desktop-width) {
+      grid-template-columns: 22% 77%;
+    }
+
+    @media (min-width: $xl-width) {
+      grid-template-columns: 17% 83%;
+    }
   }
 }
 
@@ -31,6 +81,14 @@
   border: 1px solid $special_light-grey;
   border-radius: 0;
   outline: transparent;
+
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:focus {
+    border: 1px solid $special_dark-grey;
+  }
 }
 
 .contact-info__item_email,
@@ -48,7 +106,20 @@
   background-image: url(../img/svg/icon_email.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $sm-desktop-width) {
+    top: 22px;
+    right: 54px;
+  }
+
+  @media (min-width: $xl-width) {
+    right: 20px;
+  }
 }
+
+/*.contact-info__item_email:focus::after {
+  background-image: url(../img/svg/icon_email_hover.svg);
+}*/
 
 .contact-info__item_tel::after {
   content: "";
@@ -60,4 +131,13 @@
   background-image: url(../img/svg/phone.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $sm-desktop-width) {
+    top: 18px;
+    right: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    right: 20px;
+  }
 }

@@ -1,20 +1,28 @@
 .more-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  align-self: center;
 }
 
 .more-cards__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-content: center;
 
   @media (min-width: 350px) {
-    max-width: 310px;
-    padding: 38px 68px;
+
+    padding: 38px 36px;
     border: 2px solid $basic-light-grey-3;
+  }
+
+  @media (min-width: 700px) {
+
+  }
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $sm-desktop-width) {
+
   }
 }
 
@@ -23,6 +31,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 350px) {
+    width: 230px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    width: 100%;
+  }
 
   p {
     @include margin-h-reset;
@@ -80,8 +96,8 @@
   }
 
   @media (min-width: 350px) {
-    margin-top: 49px;
-    margin-bottom: 49px;
+    margin-top: 63px;
+    margin-bottom: 63px;
 
     &::before,
     &::after {

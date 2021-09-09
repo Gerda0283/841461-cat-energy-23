@@ -20,7 +20,7 @@
   @media (min-width: $sm-desktop-width) {
     grid-area: 1/2/2/2;
     max-width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     align-items: flex-start;
     background-image: url(../img/index/md/cat-desktop_md.jpg);
     background-repeat: no-repeat;
@@ -28,17 +28,8 @@
     background-size: cover;
   }
 
-  @media (min-width: $desktop-width) {
-    min-height: 90vh;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 100vh;
-  }
-
-  @media (min-width: 1540px) {
+  @media (min-width: 1440px) {
     display: none;
-    min-height: 80vh;
   }
 }
 
@@ -60,6 +51,10 @@
   }
 
   @media (min-width: 521px) and (max-width: 992px) {
+    display: none;
+  }
+
+  @media (min-width: 1440px) {
     display: none;
   }
 }

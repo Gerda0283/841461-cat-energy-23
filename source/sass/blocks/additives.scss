@@ -1,20 +1,36 @@
-@media (max-width: $sm-tablet-width) {
+.additives {
 
-  .additives__data {
-    width: 100%;
-    padding-bottom: 28px;
+  @media (min-width: $sm-desktop-width) {
+    padding-right: 40px;
   }
 
+  @media (min-width: 1440px) {
+    padding-right: 0;
+  }
+}
+
+.additives__data {
+  min-width: 100%;
+  padding-bottom: 28px;
+
+  @media (min-width: 350px) {
+    min-width: 310px;
+    margin: 0 auto;
+  }
+  @media (min-width: 700px) {
+    min-width: 100%;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .additives__characteristics {
   display: grid;
-  grid-template-rows: repeat (72px auto);
+  /*grid-template-rows: 72px auto;*/
 
   @media (min-width: $sm-desktop-width) {
-    grid-area: 2 / 1 span;
-    width: 600px;
     row-gap: 0;
   }
-
 }

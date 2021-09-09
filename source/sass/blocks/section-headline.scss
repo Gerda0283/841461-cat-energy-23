@@ -66,7 +66,7 @@
     @include padding-l-lg;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $xl-width) {
     @include padding-lg;
   }
 }
@@ -126,7 +126,7 @@
     @include padding-l-lg;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $xl-width) {
     @include padding-lg;
   }
 }
@@ -135,6 +135,7 @@
     @include margin-h-reset;
     position: relative;
     display: flex;
+    padding-left: 20px;
     justify-content: flex-end;
     align-items: flex-start;
     font-size: 24px;
@@ -142,48 +143,129 @@
 
     &::after {
       content: "";
-      width: 100%;;
+      width: 15%;
       height: 2px;
       margin-top: 14px;
       margin-left: 25px;
       background-color: $basic_green;
     }
 
-  @media (min-width: 350px) {
+ @media (min-width: 350px) {
     font-size: 30px;
     line-height: 30px;
 
     &::after {
+      width: 12%;
       margin-top: 17px;
+      margin-left: 5px;
+    }
+  }
+
+  @media (min-width: $sm-tablet-width) {
+
+    &::before {
+      width: 9%;
+      margin-right: 15px;
+    }
+
+    &::after {
+      width: 40%;
+      margin-left: 14px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    margin-bottom: 68px;
+    padding-left: 0;
+
+    &::before {
+      content: "";
+      width: 14%;
+      height: 2px;
+      margin-top: 14px;
+      margin-right: 25px;
+      background-color: $basic_green;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+
+    &::before {
+      width: 6%;
+      margin-right: 13px;
+    }
+
+    &::after {
+      width: 53%;
+      margin-left: 20px;
+    }
+  }
+
+  @media (min-width: 820px) {
+
+    &::before {
+      width: 9%;
+      margin-right: 8px;
     }
   }
 
   @media (min-width: $sm-desktop-width) {
     position: relative;
+    margin-bottom: 80px;
     padding-left: 67px;
+    padding-left: 0;
     padding-right: 0;
     font-size: 36px;
     line-height: 36px;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 20px;
-      left: 0;
-      width: 50px;
-      height: 2px;
-      background-color: $basic_green;
+      width: 4%;
+      margin-top: 22px;
+      margin-right: 19px;
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 0;
-      width: 500px;
-      height: 2px;
-      background-color: $basic_green;
+      width: 61%;
+      margin-top: 22px;
+      margin-left: 28px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &::before {
+      width: 3%;
+      margin-right: 28px;
+    }
+
+    &::after {
+      width: 63%;
+      margin-left: 42px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+
+    &::before {
+      width: 4%;
+      margin-right: 52px;
+    }
+
+    &::after {
+      width: 62%;
+      margin-left: 52px;
+    }
+  }
+
+  @media (min-width: $xl-width) {
+
+    &::before {
+      margin-right: 49px;
+    }
+
+    &::after {
+      width: 66%;
+      margin-left: 45px;
     }
   }
 }
-

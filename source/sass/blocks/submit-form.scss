@@ -1,11 +1,24 @@
-.submit-form__button {
+.submit-form {
 
-  @media (max-width: $mobile-width) {
-    width: 100%;
-    margin-top: 9px;
-    margin-bottom: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 16px;
+  @media (min-width: 820px) {
+    padding-right: 0;
+  }
+}
+
+.submit-form__button {
+  width: 100%;
+  margin-top: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+
+  @media (min-width: 700px) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 20px;
   }
 }

@@ -14,7 +14,7 @@
   </head>
   <body class="page-body page-body_inner">
     <header class="main-header main-header_inner">
-      <div class="container">
+      <div class="container container_menu-wrapper">
         <div class="cell cell_logo-theme cell_logo-theme-inner">
           <a class="main-header__logo logo-img logo-img_inner-page-theme" href="index.html">
             <picture>
@@ -30,7 +30,7 @@
               <span class="visually-hidden">Открывает меню</span>
             </button>
             <div class="main-nav__wrapper">
-              <ul class="main-nav__list menu-list">
+              <ul class="main-nav__list menu-list menu-list_inner">
                 <li class="menu-list__item">
                   <a href="index.html">Главная</a>
                 </li>
@@ -54,10 +54,9 @@
           </div>
         </div>
         <h2 class="visually-hidden">Основные товары</h2>
-        <div class="container">
-          <div class="cell">
-            <ul class="catalog-list">
-              <li class="catalog-list__item product">
+        <div class="container container_catalog-list-theme">
+            <div class="cell cell_catalog-list-theme catalog-list">
+              <div class="catalog-list__item product">
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
@@ -96,8 +95,8 @@
                     </picture>
                   </a>
                 </div>
-              </li>
-              <li class="catalog-list__item product">
+              </div>
+              <div class="catalog-list__item product">
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
@@ -136,8 +135,8 @@
                     </picture>
                   </a>
                 </div>
-              </li>
-              <li class="catalog-list__item product">
+              </div>
+              <div class="catalog-list__item product">
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
@@ -176,8 +175,8 @@
                     </picture>
                   </a>
                 </div>
-              </li>
-              <li class="catalog-list__item product">
+              </div>
+              <div class="catalog-list__item product">
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
@@ -216,8 +215,8 @@
                     </picture>
                   </a>
                 </div>
-              </li>
-              <li class="catalog-list__item product">
+              </div>
+              <div class="catalog-list__item product">
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
@@ -256,8 +255,8 @@
                     </picture>
                   </a>
                 </div>
-              </li>
-              <li class="catalog-list__item product">
+              </div>
+              <div class="catalog-list__item product">
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
@@ -296,8 +295,8 @@
                     </picture>
                   </a>
                 </div>
-              </li>
-              <li class="catalog-list__item product">
+              </div>
+              <div class="catalog-list__item product">
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
@@ -336,21 +335,20 @@
                     </picture>
                   </a>
                 </div>
-              </li>
-            </ul>
-          </div>
-          <div class="cell more-cards">
-            <div class="more-cards__item">
-              <div class="more-cards__caption">
-                <h3 class="division-headline division-headline_more-cards-theme">Показать еще 100500 товаров</h3>
-                <p>На самом деле вкусов гораздо больше!</p>
               </div>
-              <button class="more-cards__button button"><!--Реализация плюсика через svg или псевдокласс-->
-                <span class="visually-hidden">Показать больше товаров</span>
-              </button>
-              <button class="button_more-product button">Показать все</button>
+              <div class="more-cards">
+                <div class="more-cards__item">
+                  <div class="more-cards__caption">
+                    <h3 class="division-headline division-headline_more-cards-theme">Показать еще 100500 товаров</h3>
+                    <p>На самом деле вкусов гораздо больше!</p>
+                  </div>
+                  <button class="more-cards__button button">
+                    <span class="visually-hidden">Показать больше товаров</span>
+                  </button>
+                  <button class="button_more-product button">Показать все</button>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </section>
       <section class="catalog-additives">
@@ -404,7 +402,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__contacts">
-        <div class="container container_address-card-theme">
+        <div class="container container_address-card-theme container_address-card-inner">
           <div class="cell address-card cell_address-card">
               <h3 class="division-headline division-headline_address-card-theme">Приглашаем к сотрудничеству дилеров!</h3>
               <p class="address-card__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

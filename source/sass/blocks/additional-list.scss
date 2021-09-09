@@ -1,5 +1,29 @@
 .additional-list {
   @include reset-list;
+
+  @media (min-width: $sm-tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    column-gap: 32px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 52px;
+  }
+
+  @media (min-width: 820px) {
+    grid-template-columns: repeat(auto-fill, 300px);
+    column-gap: 42px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
 }
 
 .additional-list__item {
@@ -11,5 +35,15 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    margin-bottom: 35px;
   }
 }

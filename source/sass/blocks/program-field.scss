@@ -10,47 +10,245 @@
   &:last-of-type {
     border-bottom: none;
   }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .program-field__legend {
+  @include margin-h-reset;
   position: relative;
+  display: flex;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: 24px;
+  line-height: 24px;
 
-  @media (max-width: $mobile-width) {
-    font-size: 24px;
-    line-height: 26px;
-    padding-left: 20px;
-    margin-bottom: 35px;
+  &::after {
+    content: "";
+    width: 33%;
+    height: 2px;
+    margin-top: 14px;
+    margin-left: 20px;
+    background-color: $basic_green;
+  }
+
+  @media (min-width: 350px) {
+    justify-content: space-between;
+    font-size: 30px;
+    line-height: 30px;
 
     &::after {
+      width: 25%;
+      margin-top: 17px;
+      margin-left: 20px;
+    }
+  }
+
+  @media (min-width: $sm-tablet-width) {
+
+    &::after {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 700px) {
+    margin-top: 51px;
+    margin-bottom: 68px;
+    padding-left: 0;
+
+    br {
+      display: none;
+    }
+
+    &::before {
       content: "";
-      position: absolute;
-      top: 17px;
-      right: 0;
-      width: 99px;
+      width: 3%;
       height: 2px;
+      margin-top: 14px;
+      margin-right: 10px;
       background-color: $basic_green;
+    }
+
+    &::after {
+      width: 22%;
+      margin-left: 10px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 11px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      width: 6%;
+      margin-top: 21px;
+      margin-right: 21px;
+    }
+
+    &::after {
+      width: 21%;
+      margin-top: 21px;
+      margin-left: 28px;
+    }
+  }
+
+  @media (min-width: 820px) {
+
+    &::after {
+      width: 25%;
+      margin-left: 33px;
+    }
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    margin-top: 68px;
+
+    &::before {
+      width: 4%;
+      margin-right: 18px;
+    }
+
+    &::after {
+      width: 40%;
+      margin-left: 26px;
+    }
+  }
+
+  @media (min-width: 1100px) {
+
+    &::after {
+      width: 45%;
+      margin-left: 31px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &::after {
+      width: 48%;
+      margin-left: 46px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+
+    &::before {
+      width: 5%;
+      margin-right: 39px;
+    }
+
+    &::after {
+     width: 48%;
+     margin-left: 60px;
+    }
+  }
+
+  @media (min-width: $xl-width) {
+
+    &::after {
+      width: 51%;
+      margin-left: 68px;
     }
   }
 }
 
 .program-field__legend_headline-second {
 
-  @media (max-width: $mobile-width) {
+  &::after {
+    width: 53%;
+  }
+
+  @media (min-width: 350px) {
 
     &::after {
-      width: 158px;
+      width: 53%;
+    }
+  }
+
+  @media (min-width: $sm-tablet-width) {
+
+    &::after {
+      width: 70%;
+    }
+  }
+  @media (min-width: 700px) {
+    margin-top: 42px;
+
+    &::after {
+      width: 62%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+
+    &::after {
+      width: 64%;
+    }
+  }
+
+  @media (min-width: $sm-desktop-width) {
+
+    &::after {
+      width: 80%;
     }
   }
 }
 
 .program-field__legend_headline-third {
+  margin-top: 22px;
+  margin-bottom: 34px;
 
-  @media (max-width: $mobile-width) {
-    margin-top: 22px;
-    margin-bottom: 34px;
+  &::after {
+    width: 53%;
+  }
+
+  @media (min-width: 350px) {
 
     &::after {
-      width: 136px;
+      width: 53%;
+    }
+  }
+
+  @media (min-width: $sm-tablet-width) {
+    margin-bottom: 52px;
+
+    &::after {
+      width: 65.5%;
+    }
+  }
+
+  @media (min-width: 700px) {
+    margin-top: 65px;
+    margin-bottom: 58px;
+
+    &::after {
+      width: 58%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+
+    &::after {
+      width: 59%;
+    }
+  }
+
+  @media (min-width: $sm-desktop-width) {
+
+    &::after {
+      width: 80%;
     }
   }
 }

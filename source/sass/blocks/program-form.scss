@@ -1,4 +1,24 @@
+.program-form {
+  @media (min-width: $sm-desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  @media (min-width: 1540px) {
+    grid-template-columns: 720px 720px;
+    justify-content: center;
+  }
+}
+
 .program-form__field {
   @include reset-list;
   border: none;
+
+  @media (min-width: $sm-desktop-width) {
+    &:nth-child(3) {
+      grid-area:2/2 span;
+      width: 100%;
+    }
+  }
 }

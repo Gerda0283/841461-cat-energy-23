@@ -1,7 +1,6 @@
 .address-card {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $basic_white;
 
   p {
     line-height: 20px;
@@ -12,6 +11,7 @@
     }
 
     @media (min-width: 700px) {
+      width: 160px;
       text-align: right;
     }
 
@@ -22,16 +22,12 @@
 
   @media (min-width: 700px) {
     grid-area: 1/2 span;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: 820px) {
     @include padding-m-l;
-  }
-
-  @media (max-width: 992px) {
-    background-color: $basic-light-grey-3;
   }
 
   @media (min-width: $sm-desktop-width) {
@@ -41,6 +37,7 @@
     column-gap: 80px;
     padding-top: 40px;
     @include padding-l;
+    background-color: $basic_white;
   }
 
   @media (min-width: 1300px) {

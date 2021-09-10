@@ -14,6 +14,7 @@
 
 .button_more-product {
   order:3;
+  width: 100%;
   @include reset-btn;
   padding: 10px;
   font-size: 16px;
@@ -28,6 +29,10 @@
 
   @media (min-width: 350px) {
     margin-top: 85px;
+  }
+
+  @media (min-width: 700px) {
+    line-height: 24px;
   }
 
   &:hover,
@@ -45,7 +50,7 @@
 
   .button_visible-xs-theme {
     position: relative;
-    width: 80%;
+    width: 230px;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;

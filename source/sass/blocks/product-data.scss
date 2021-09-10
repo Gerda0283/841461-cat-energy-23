@@ -15,7 +15,6 @@
 
   @media (min-width: 350px) {
     justify-content: center;
-    width: 252px;
     padding-bottom: 33px;
   }
 }
@@ -42,6 +41,22 @@
     @media (min-width: 350px) {
       width: 250px;
       border-bottom: 1px solid $special_grey;
+    }
+
+    @media (min-width: 700px) {
+      width: 200px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 250px;
+    }
+
+    @media (min-width: 820px) {
+      width: 200px;
+    }
+
+    @media (min-width: $sm-desktop-width) {
+      width: 170px;
     }
   }
 

@@ -1,5 +1,13 @@
 .filter-info {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-left: 28px;
+    padding-bottom: 25px;
+    border: 1px solid $special_light-grey;
+    border-left: 1px solid $special_light-grey;
+  }
 }
 
 .filter-info__item {
@@ -11,5 +19,11 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

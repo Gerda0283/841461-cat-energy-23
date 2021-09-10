@@ -1,4 +1,5 @@
 .cat-weight {
+  position: relative;
   background-color: $basic-light-grey-2;
 
   @media (min-width: 521px) and (max-width: $mobile-width-only) {
@@ -14,5 +15,18 @@
   @media (min-width: $sm-desktop-width) {
     background-image: linear-gradient($basic_white 35%, $basic-light-grey-3 35%, $basic-light-grey-3 100%);
     border-top: none;
+  }
+
+  @media (min-width: 1440px) {
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30.5%;
+      bottom: 0;
+      right: 0;
+      left: 70vw;
+      background-image: linear-gradient($basic-transparent 6.5%, $basic-light-grey-2 6.5%, $basic-light-grey-2 100%);
+    }
   }
 }

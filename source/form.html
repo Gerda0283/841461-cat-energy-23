@@ -12,14 +12,15 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page-body page-body_inner">
+  <body class="page-body page-body_inner-form">
     <header class="main-header main-header_inner">
-      <div class="container">
+      <div class="container container_menu-wrapper">
         <div class="cell cell_logo-theme cell_logo-theme-inner">
           <a class="main-header__logo logo-img logo-img_inner-page-theme" href="index.html">
             <picture>
-              <source media="(min-width: 767px)" srcset="img/logo_cat-energy-img_sm.svg">
-              <img width="191" height="38px" src="img/logo_cat-energy-img_xs.svg" alt="Логотип Кэт энерджи" >
+              <source media="(min-width: 993px)" srcset="img/logo_cat-energy-img_md.svg">
+              <source media="(min-width: 521px)" srcset="img/logo_cat-energy-img_sm.svg">
+              <img width="191" height="38" src="img/logo_cat-energy-img_xs.svg" alt="Логотип Кэт энерджи" >
            </picture>
           </a>
         </div>
@@ -29,7 +30,7 @@
               <span class="visually-hidden">Открывает меню</span>
             </button>
             <div class="main-nav__wrapper">
-              <ul class="main-nav__list menu-list">
+              <ul class="main-nav__list menu-list menu-list_inner">
                 <li class="menu-list__item">
                   <a href="index.html">Главная</a>
                 </li>
@@ -47,16 +48,16 @@
     </header>
     <main class="program-main">
       <div class="container container_program-main">
-          <div class="cell">
-            <h1 class="main-headline main-headline_program-main-theme">Подбор программы</h1>
+          <div class="cell cell_inner-first">
+            <h1 class="main-headline main-headline_inner-headline-theme">Подбор программы</h1>
             <p>Заполните анкету, и мы подберем<br /> программу питания для вашего кота</p>
           </div>
       </div>
       <form class="program-form" method="POST" action="https://echo.htmlacademy.ru">
         <fieldset class="program-form__field program-field">
           <h2 class="visually-hidden">Данные для формирования заказа</h2>
-          <div class="container">
-            <div class="cell">
+          <div class="container container_program-field-theme container_program-field-theme_first">
+            <div class="cell cell_base-info-list-theme">
               <ul class="base-info-list">
                 <li class="base-info-list__item base-info">
                   <label class="base-info-list__label" for="name">Имя:*</label>
@@ -76,8 +77,8 @@
         </fieldset>
         <fieldset class="program-form__field program-field">
           <h2 class="visually-hidden">Данные для выбора типа диеты</h2>
-          <div class="container">
-            <div class="cell">
+          <div class="container container_program-field-theme container_program-field-theme_second">
+            <div class="cell cell_program-field-radio-theme">
               <ul class="filter-info">
                 <li class="filter-option filter-info__item">
                   <input class="filter-option__input radio-input visually-hidden" type="radio" name="diet" value="weight-loss" id="weight-loss" checked  />
@@ -97,8 +98,8 @@
         </fieldset>
         <fieldset class="program-form__field program-field">
           <h2 class="program-field__legend section-headline">Контактные данные<br /> (владельца кота)</h2>
-          <div class="container">
-            <div class="cell">
+          <div class="container container_program-field-theme">
+            <div class="cell cell_contact-info-theme">
               <ul class="contact-info">
                 <li class="contact-info__item contact-info__item_email">
                   <label class="contact-info__label" for="email">E-mail:*</label>
@@ -112,13 +113,13 @@
             </div>
           </div>
           <h2 class="program-field__legend section-headline program-field__legend_headline-second">Комментарий</h2>
-          <div class="container">
+          <div class="container container_program-field-theme">
             <div class="cell">
               <textarea class="comment-info" rows="6" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
           <h2 class="program-field__legend section-headline program-field__legend_headline-third">Дополнительно</h2>
-          <div class="container">
+          <div class="container container_program-field-theme">
             <div class="cell">
               <ul class="additional-list">
                 <li class="additional-list__item component">
@@ -141,7 +142,7 @@
             </div>
           </div>
         </fieldset>
-        <div class="container">
+        <div class="container container_submit-form-theme">
           <div class="cell submit-form">
             <button class="submit-form__button button" type="submit">отправить заявку</button>
           </div>
@@ -153,7 +154,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__contacts">
-        <div class="container container_address-card-theme">
+        <div class="container container_address-card-theme container_address-card-inner">
           <div class="cell address-card cell_address-card">
               <h3 class="division-headline division-headline_address-card-theme">Приглашаем к сотрудничеству дилеров!</h3>
               <p class="address-card__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

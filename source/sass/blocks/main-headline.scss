@@ -31,6 +31,10 @@
 
 .main-headline_inner-headline-theme {
   @include margin-h-reset;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .main-headline_program-main-theme {

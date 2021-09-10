@@ -79,10 +79,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
   }
-
-  @media (min-width: 1640px) {
-    color: $basic_white;
-  }
 }
 
 .intro p {
@@ -121,10 +117,6 @@
     font-size: 20px;
     line-height: 20px;
     color: $basic_black;
-  }
-
-  @media (min-width: 1640px) {
-    color: $basic_white;
   }
 }
 
@@ -286,9 +278,6 @@
   .intro__program-link {
     width: 40%;
   }
-}
-
-@media (min-width: 1440px) {
 
   .intro__brand-pack-img {
 
@@ -302,26 +291,5 @@
 
   .intro__program-link {
     width: 45%;
-  }
-}
-
-@media (min-width: 1640px) {
-
-  .intro__program-link {
-    width: 40%;
-    color: $basic_green;
-    background-color: $basic_white;
-
-    &:hover,
-    &:focus {
-      color: $basic_white;
-      background-color: none;
-      border: 2px solid $basic_white;
-    }
-
-    &:active {
-      color: $basic_white-alfa;
-      border: 2px solid $basic_white-alfa;
-    }
   }
 }

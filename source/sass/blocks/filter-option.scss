@@ -12,6 +12,13 @@
     height: 30px;
     border: 1px solid $special_grey;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      left: -65px;
+      top: -5px;
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -24,6 +31,13 @@
   height: 14px;
   background-color: $basic_green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 7px;
+    left: -53px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .filter-option__input:hover + .filter-option__label::before  {
@@ -39,10 +53,18 @@
   height: 14px;
   background-color: $basic_green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 7px;
+    left: -53px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .filter-option__input:disabled + .filter-option__label::before {
-  opacity: 0.9;
+  opacity: 0.45;
+  border: 1px solid $special_dark-grey;
 }
 
 .filter-option__input:disabled + .filter-option__label {
@@ -51,7 +73,8 @@
 }
 
 .filter-option__input:hover:disabled + .filter-option__label::before {
-  border: 1px solid $special_grey;
+  opacity: 0.45;
+  border: 1px solid $special_dark-grey;
 }
 
 .filter-option__input:hover:disabled + .filter-option__label::after {

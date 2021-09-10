@@ -9,14 +9,19 @@
     flex-wrap: wrap;
   }
 
-  @media (min-width: 1200px) {
-    width: 480px;
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
     justify-content: space-between;
   }
 
   @media (min-width: 1440px) {
     width: 550px;
   }
+
 }
 
 .menu-list__item {
@@ -27,12 +32,18 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 17px;
     padding-left: 35px;
-    padding-top: 22px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
-  @media (min-width: 1200px) {
-    padding-left: 15px;
+  @media (min-width: 993px) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: 1100px) {
+    padding-left: 25px;
     padding-top: 15px;
   }
 
@@ -188,6 +199,20 @@
       width: 100%;
       height: 2px;
       background-color: $basic_white;
+    }
+  }
+
+  .menu-list_inner {
+
+    .menu-list__item a {
+      color: $basic_black;
+    }
+
+    .menu-list__item_сurrent a {
+
+      &::after {
+        background-color: $basic_green;
+      }
     }
   }
 }

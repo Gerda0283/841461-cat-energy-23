@@ -80,13 +80,15 @@
 }
 
 @mixin call-to-action-btn {
+  max-width: 100%;
   padding: 8px 10px;
-  text-align: center;
   font-family: "Oswald", Arial, sans-serif;
   text-transform: uppercase;
+  text-align: center;
   color: $basic_white;
   background-color: $basic_green;
   border: none;
+  white-space: pre-wrap;
 
   &:hover,
   &:focus {

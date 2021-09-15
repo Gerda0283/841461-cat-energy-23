@@ -19,42 +19,46 @@
     &::before {
       content: "";
       position: absolute;
-      top: 30%;
+      top: 18%;
       bottom: 0;
       right: 0;
-      width: 49%;
-      background-image: linear-gradient($basic-transparent 6.5%, $basic-light-grey-2 6.5%, $basic-light-grey-2 100%);
+      width: 48%;
+      background-image: linear-gradient($basic-transparent 1%, $basic-light-grey-2 1%, $basic-light-grey-2 100%);
     }
   }
 
   @media (min-width: 1100px) {
 
     &::before {
-      width: 50%;
+      top: 22%;
+      width: 49.5%;
+      background-image: linear-gradient($basic-transparent 6.25%, $basic-light-grey-2 6.25%, $basic-light-grey-2 100%);
     }
   }
 
   @media (min-width: $desktop-width) {
 
     &::before {
-      width: 50.5%;
+      width: 50%;
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1540px) {
 
     &::before {
-      display: none;
+      top: 21.5%;
+      background-image: linear-gradient($basic-transparent 7%, $basic-light-grey-2 7%, $basic-light-grey-2 100%);
     }
   }
 }
 
 .slider__list {
   @include reset-list;
-  margin-top: 42px;
+  margin-top: 40px;
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  max-width: 100%;
 
   @media (min-width: $desktop-width) {
     margin-top: 11px;

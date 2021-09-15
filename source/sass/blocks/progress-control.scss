@@ -16,6 +16,7 @@
 .progress-control__button {
   position: absolute;
   @include reset-btn;
+  cursor: pointer;
 }
 
 .progress-control__button_left-slide {
@@ -49,16 +50,24 @@
 
   .progress-control__full-bar {
     position: absolute;
-    top: -5px;
-    left: 45%;
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    background-color: $basic_green;
-    border: 13px solid $basic_white;
+    top: -8px;
+    left: 43%;
+    width: 39px;
+    height: 39px;
+    background-image: radial-gradient(circle, $basic_green 15%, $basic_white 17%, $basic_white 100%);
+    border: 1px solid $special_grey;
     border-radius: 50%;
-    box-shadow: 0 1px 1px 1px $basic_black-alfa;
+    box-shadow: 0 1px 3px $basic_black-alfa;
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 2px 4px $basic_black-alfa-2;
+    }
+
+    &:focus {
+      border: 1px solid $basic_green;
+      box-shadow: 0 3px 5px $basic_black-alfa-3;
+    }
   }
 
   .progress-control__button {
@@ -113,16 +122,6 @@
 @media (min-width: $tablet-width) {
 
   .progress-control__full-bar {
-    position: absolute;
-    top: -4px;
     left: 45%;
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    background-color: $basic_green;
-    border: 13px solid $basic_white;
-    border-radius: 50%;
-    box-shadow: 0 1px 1px 1px $basic_black-alfa;
-    cursor: pointer;
   }
 }

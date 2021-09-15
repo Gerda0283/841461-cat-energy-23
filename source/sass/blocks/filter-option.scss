@@ -40,7 +40,8 @@
   }
 }
 
-.filter-option__input:hover + .filter-option__label::before  {
+.filter-option__input:hover + .filter-option__label::before,
+.filter-option__input:checked + .filter-option__label::before {
   border: 1px solid $special_light-grey-2;
 }
 

@@ -7,6 +7,10 @@
     background-image: url(../img/index/xs/cat-desktop_xs.jpg);
     background-repeat: no-repeat;
     background-position: center top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/index/xs/cat-desktop_xs-2x.jpg);
+    }
   }
 
   @media (min-width: 321px) and (max-width: $sm-tablet-width) {
@@ -15,20 +19,28 @@
     background-image: url(../img/index/sm/cat-desktop_sm.jpg);
     background-repeat: no-repeat;
     background-position: right center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/index/sm/cat-desktop_sm-2x.jpg);
+    }
   }
 
   @media (min-width: $sm-desktop-width) {
     grid-area: 1/2/2/2;
     max-width: 100%;
-    min-height: 70vh;
+    min-height: 100vh;
     align-items: flex-start;
     background-image: url(../img/index/md/cat-desktop_md.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/index/md/cat-desktop_md-2x.jpg);
+    }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $xl-width) {
     display: none;
   }
 }

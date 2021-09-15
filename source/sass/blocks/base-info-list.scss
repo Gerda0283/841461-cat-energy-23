@@ -90,3 +90,15 @@
     padding: 10px;
   }
 }
+
+.base-info-list__input_error {
+  border: 1px solid $basic-red;
+
+  &:hover {
+    border: 1px solid $basic-red;
+  }
+
+  &:focus {
+    border: 1px solid $special_dark-grey;
+  }
+}

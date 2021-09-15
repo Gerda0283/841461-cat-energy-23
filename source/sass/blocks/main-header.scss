@@ -8,17 +8,16 @@
   background-color: $basic_white;
 
   @media (min-width: $sm-desktop-width) {
-    grid-template-rows: 30vh 62vh;
+    grid-template-rows: 30vh 70vh;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $xl-width) {
     position: relative;
     grid-area: 1/1/2/2;
     width: 100%;
-    height: 82vh;
     background-image: url(../img/index/md/cat-desktop_md.jpg);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right center;
     background-size: 50%;
 
     &::before {
@@ -26,9 +25,38 @@
       position: absolute;
       top: 0;
       right: 0;
-      bottom: 0;
       width: 50%;
+      height: 100%;
       background-color: $basic_green-alfa;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/index/md/cat-desktop_md-2x.jpg);
+    }
+
+    @media (min-height: $height-s) {
+      max-height: 85vh;
+
+      &::before {
+        max-height: 85vh;
+      }
+    }
+
+
+    @media (min-height: $height-m) {
+      max-height: 82vh;
+
+      &::before {
+        max-height: 82vh;
+      }
+    }
+
+    @media (min-height: $height-l) {
+      max-height: 75vh;
+
+      &::before {
+        max-height: 75vh;
+      }
     }
   }
 }
@@ -38,14 +66,14 @@
   grid-template-rows: auto;
   background-image: none;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $xl-width) {
     position: relative;
     height: auto;
   }
 
   &::before {
 
-    @media (min-width: 1440px) {
+    @media (min-width: $xl-width) {
       content: "";
       display: none;
     }

@@ -118,3 +118,19 @@
     margin-bottom: 15px;
   }
 }
+
+.division-headline_add-component-theme {
+  @include margin-h-reset;
+
+  @media (max-width: $sm-tablet-width) {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: 521px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

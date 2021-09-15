@@ -4,7 +4,8 @@
   }
 }
 
-.map iframe {
+.map__frame {
+  border: none;
 
   @media (max-width: $sm-desktop-width) {
     width: 100%;

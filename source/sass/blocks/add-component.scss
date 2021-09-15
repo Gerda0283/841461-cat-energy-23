@@ -6,10 +6,10 @@
     border-top: 1px solid $special_grey;
   }
 
-  td {
+  .add-component__td {
     display: flex;
 
-    h3, p {
+    p {
       @include margin-h-reset;
     }
   }
@@ -18,7 +18,7 @@
     grid-template-columns: 80% 20%;
     grid-template-rows: auto;
 
-    td {
+    .add-component__td {
       justify-content: space-between;
 
       &:nth-child(2n+1) {
@@ -27,21 +27,14 @@
 
     }
 
-    td:first-child {
+    .add-component__td:first-child {
       grid-area: 1/ 2 span;
       justify-content: flex-start;
     }
 
-    td:last-child {
+    .add-component__td:last-child {
       grid-area: 3/ 2 span;
       justify-content: center;
-    }
-
-    h3 {
-      padding-top: 12px;
-      padding-bottom: 13px;
-      font-size: 16px;
-      line-height: 16px;
     }
 
     p {
@@ -64,30 +57,25 @@
     border-left: 1px solid $special_grey;
     border-right: 1px solid $special_grey;
 
-    td {
+    .add-component__td {
       padding-bottom: 25px;
     }
 
-    td:nth-child(2n) {
+    .add-component__td:nth-child(2n) {
       justify-content: flex-end;
     }
 
-    td:nth-child(2n+1) {
+    .add-component__td:nth-child(2n+1) {
       justify-content: flex-end;
     }
 
-    td:first-child {
+    .add-component__td:first-child {
       grid-area: 1/1;
       justify-content: flex-start;
     }
 
-    td:last-child {
+    .add-component__td:last-child {
       grid-area: 2/3 span;
-    }
-
-    h3 {
-      font-size: 20px;
-      line-height: 20px;
     }
 
     .button_btn-container-theme {
@@ -98,16 +86,11 @@
   @media (min-width: $sm-desktop-width) {
     grid-template-columns: 3fr 3fr 1fr 2fr;
 
-    td {
+    .add-component__td {
       align-content: center;
       align-items: center;
       padding-top: 17px;
       padding-bottom: 17px;
-    }
-
-    h3 {
-      font-size: 20px;
-      line-height: 20px;
     }
 
     .button_btn-container-theme {

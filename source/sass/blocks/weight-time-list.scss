@@ -10,7 +10,7 @@
     justify-content: flex-start;
   }
 
-  span {
+  .weight-time-list__span {
     padding-top: 15px;
     padding-bottom: 15px;
     @include font-family-headline;
@@ -78,8 +78,12 @@
       @media (min-width: $sm-desktop-width) {
         width: 400px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-content: center;
+
+        .weight-time-list__white-space {
+          width: 63px;
+        }
       }
     }
   }

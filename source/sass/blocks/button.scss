@@ -37,22 +37,24 @@
 
   &:hover,
   &:focus {
-    color: $basic_white;
-    background-color: $basic_green;
+    color: $special_dark-grey;
+    background-color: $special_dark-grey-3;
   }
 
   &:active {
-    color: $basic_white-alfa;
+    color: $basic_black-alfa-3;
+    background-color: $special_dark-grey-3;
   }
 }
 
-@media (min-width: 0) and (max-width: $sm-tablet-width) {
+.button_visible-xs-theme {
+  width: 81%;
 
-  .button_visible-xs-theme {
+  @media (min-width: 350px) {
+    width: 83%;
+  }
+    @media (max-width: $sm-tablet-width) {
     position: relative;
-    width: 230px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 14px;
     line-height: 18px;
     order: 4;

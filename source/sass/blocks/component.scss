@@ -39,7 +39,8 @@
   }
 }
 
-.component__input:hover + .component__label::before  {
+.component__input:hover + .component__label::before,
+.component__input:checked + .component__label::before {
   border: 1px solid $special_light-grey-2;
 }
 

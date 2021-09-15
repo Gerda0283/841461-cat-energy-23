@@ -3,6 +3,7 @@
   padding-bottom: 20px;
 
   p {
+    @include margin-h-reset;
     line-height: 20px;
 
     @media (min-width: 321px) and (max-width: $mobile-width-only) {
@@ -13,10 +14,15 @@
     @media (min-width: 700px) {
       width: 160px;
       text-align: right;
+
+      .address-card__last-line {
+        line-height: 48px;
+      }
     }
 
     @media (min-width: $sm-desktop-width) {
       width: 180px;
+      text-align: left;
     }
   }
 
@@ -44,8 +50,20 @@
     margin-left: 100px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width:  $xl-width) {
     margin-left: 110px;
   }
 }
 
+.address-card__link {
+
+  display: none;
+
+  @media (min-width: $sm-desktop-width) {
+    display: inline;
+    @include link-style;
+    font-size: 13px;
+    font-style: italic;
+    color: $basic-dark-grey;
+  }
+}

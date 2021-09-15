@@ -39,7 +39,7 @@
     column-gap: 59px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $xl-width) {
     column-gap: 100px;
   }
 }
@@ -48,8 +48,34 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+
+  &::before {
+    content: "";
+    background-color: $basic_green;
+
+    @media (max-width: $mobile-width-only) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (min-width: 521px) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 25px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 
   @media (min-width: 521px) and (max-width: $mobile-width-only) {
     width: 200px;
@@ -71,25 +97,6 @@
 
   @media (min-width: $desktop-width) {
     width: 230px;
-  }
-
-  &::before {
-    content: "";
-    background-color: $basic_green;
-
-    @media (max-width: $mobile-width-only) {
-      width: 60px;
-      height: 60px;
-    }
-
-    @media (min-width: 521px) {
-      width: 80px;
-      height: 80px;
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-top: 25px;
-    }
   }
 
   p {
@@ -190,32 +197,20 @@
 .feature__item_icon-number-one {
 
   &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
+    margin-top: 15px;
+    margin-left: 16px;
     width: 30px;
     height: 32px;
     background-image: url(../img/svg/icon_leaf.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
 
-    @media (min-width: 521px) and (max-width: $mobile-width-only) {
-      top: 31px;
-      left: 25px;
+    @media (min-width: 521px) {
+      margin-top: 25px;
+      margin-left: 26px
     }
 
     @media (min-width: $tablet-width) {
-      top: 67px;
-      left: 25px;
-    }
-
-    @media (min-width: $sm-desktop-width) {
-      top: 61px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 67px;
+      margin-top: 50px;
+      margin-left: 25px;
     }
   }
 }
@@ -223,33 +218,20 @@
 .feature__item_icon-number-two {
 
   &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
+    margin-top: 15px;
+    margin-left: 16px;
     width: 29px;
     height: 31px;
     background-image: url(../img/svg/icon_tub.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
 
-    @media (min-width: 521px) and (max-width: $mobile-width-only) {
-      top: 31px;
-      left: 25px;
+    @media (min-width: 521px) {
+      margin-top: 25px;
+      margin-left: 26px
     }
 
     @media (min-width: $tablet-width) {
-      top: 67px;
-      left: 25px;
-    }
-
-    @media (min-width: $sm-desktop-width) {
-      top: 61px;
-      left: 26px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 67px;
+      margin-top: 50px;
+      margin-left: 26px;
     }
   }
 }
@@ -257,60 +239,41 @@
 .feature__item_icon-number-three {
 
   &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 17px;
+    margin-top: 15px;
+    margin-left: 18px;
     width: 25px;
     height: 30px;
     background-image: url(../img/svg/icon_eat.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
 
-    @media (min-width: 521px) and (max-width: $mobile-width-only) {
-      top: 32px;
-      left: 27px;
+    @media (min-width: 521px) {
+      margin-top: 26px;
+      margin-left: 28px
     }
 
     @media (min-width: $tablet-width) {
-      top: 67px;
-      left: 27px;
-    }
-    @media (min-width: $sm-desktop-width) {
-      top: 62px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 68px;
+      margin-top: 51px;
+      margin-left: 28px;
     }
   }
 }
 
-.feature__item_icon-number-four{
+.feature__item_icon-number-four {
 
   &::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    left: 14px;
+    margin-top: 13px;
+    margin-left: 14px;
     width: 32px;
     height: 33px;
     background-image: url(../img/svg/icon_alarm.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
 
-    @media (min-width: 521px) and (max-width: $mobile-width-only) {
-      top: 30px;
-      left: 24px;
+    @media (min-width: 521px) {
+      margin-top: 24px;
+      margin-left: 24px;
     }
 
     @media (min-width: $tablet-width) {
-      top: 60px;
-      left: 24px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 67px;
+      margin-top: 48px;
+      margin-left: 24px;
     }
   }
 }

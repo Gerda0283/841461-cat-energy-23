@@ -7,6 +7,10 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/catalog/xs/gift-photo_xs-2x.jpg);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -32,6 +36,10 @@
     min-height: 200px;
     align-items: center;
     background-image: url(../img/catalog/sm/gift-photo_sm.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/catalog/sm/gift-photo_sm-2x.jpg);
+    }
   }
 
   @media (min-width: 700px) {
@@ -54,6 +62,10 @@
     @include padding-sm;
     background-image: url(../img/catalog/md/gift-photo_md.jpg);
     background-position: left center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/catalog/md/gift-photo_md-2x.jpg);
+    }
   }
 
   @media (min-width: 1100px) {

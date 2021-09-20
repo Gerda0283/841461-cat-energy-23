@@ -1,23 +1,22 @@
 .filter-option__label {
   position: relative;
-  margin-left: 45px;
   cursor: pointer;
 
   &::before {
     content: "";
     position: absolute;
-    left: -45px;
-    top: -4px;
     width: 30px;
     height: 30px;
+    left: -45px;
+    top: -4px;
     border: 1px solid $special_grey;
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      left: -65px;
-      top: -5px;
       width: 40px;
       height: 40px;
+      left: -65px;
+      top: -5px;
     }
   }
 }

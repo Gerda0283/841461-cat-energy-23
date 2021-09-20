@@ -15,17 +15,23 @@
     @media (min-width: $tablet-width) {
       width: 174px;
       height: 52px;
+      margin-top: -16px;
     }
 
     @media (min-width: $sm-desktop-width) {
       width: 202px;
       height: 59px;
+      margin-top: 0;
+    }
+
+    @media (min-width: $xl-width) {
+      margin-top: -5px;
+      margin-left: -9px;
     }
   }
-
 }
 
-.logo-img_inner-page-theme {
+.logo-img--inner-page-theme {
 
   &:hover,
   &:focus {
@@ -34,5 +40,13 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+
+    img {
+      margin-top: -3px;
+      margin-left: 0;
+    }
   }
 }

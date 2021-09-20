@@ -1,10 +1,6 @@
 .cell {
 
-  @media (max-width: $mobile-width) {
-    @include padding-min;
-  }
-
-  @media (min-width: 321px) and (max-width: $sm-tablet-width) {
+  @media (max-width: $sm-tablet-width) {
     @include padding-min;
   }
 
@@ -12,9 +8,9 @@
     @include padding-sm;
   }
 
-  @media (min-width: 820px) {
+  /*@media (min-width: 820px) {
     @include  padding-m-l;
-  }
+  }*/
 
   @media (min-width: $sm-desktop-width) {
     @include padding-l;
@@ -29,51 +25,39 @@
   }
 }
 
-@media (min-width: 700px) {
-
-  li.menu-list__item:first-child {
-
-    a {
-      border-top: none;
-    }
-  }
-}
-
 @media (max-width: $mobile-width) {
 
-  .cell_logo-theme {
+  .cell--logo-theme {
     grid-area: 1/1/1/1;
     padding-top: 5px;
     padding-right: 0;
     background-color: $basic_white;
   }
-
-  .cell_inner-first {
-    margin-top: 27px;
-  }
 }
 
 @media (min-width: 350px) {
 
-  .cell_inner-first {
+  .cell--inner-first {
     margin-top: 27px;
   }
 }
 
 @media (max-width: $mobile-width-only) {
 
-  .cell_logo-theme-inner {
+  .cell--logo-theme-inner {
     border-bottom: 1px solid $basic-light-grey;
   }
 
-  .cell_logo-theme {
+  .cell--logo-theme {
     grid-area: 1/1/1/1;
+    display: flex;
+    align-items: center;
     padding-top: 0;
     padding-right: 0;
     background-color: $basic_white;
  }
 
-  .cell_intro-bg-image {
+  .cell--intro-bg-image {
     grid-area: 3/1/3/1;
     padding-left: 0;
     padding-right: 0;
@@ -82,48 +66,54 @@
     grid-template-rows: auto;
   }
 
-  .cell_menu-theme {
+  .cell--menu-theme {
     grid-area: 2/1/1/1;
-    padding-left: 0;
-    padding-right: 0;
+    @include padding-hor-reset;
   }
 
-  .cell_intro-theme {
+  .cell--intro-theme {
     grid-area: 3/1/3/1;
     padding-left: 0;
     padding-right: 0;
   }
 
-  .cell_address-card {
+  .cell--address-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .cell_social-theme {
+  .cell--social-theme {
     align-self: center
   }
 }
 
 @media (min-width: 700px) and (max-width: $mobile-width-only) {
 
-  .cell_menu-theme {
+  .cell--menu-theme {
     padding-left: 0;
     padding-right: 30px;
   }
 
-  .cell_logo-theme-inner {
+  .cell--logo-theme-inner {
     border-bottom: none;
+  }
+
+  .cell--product-type-theme,
+  .cell--features-theme,
+  .cell--address-card {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 700px) {
 
-  .cell_catalog-list-theme {
+  .cell--catalog-list-theme {
     grid-area: 1/1;
   }
 
-  .cell_social-theme {
+  .cell--social-theme {
     align-self: center;
     padding-left: 0;
     padding-right: 0;
@@ -132,88 +122,80 @@
 
 @media (min-width: $tablet-width) {
 
-  .cell_logo-theme {
+  .cell--logo-theme {
     align-self: flex-end;
   }
 
-  .cell_menu-theme {
+  .cell--menu-theme {
     padding-left: 0;
     align-self: center;
   }
 
-  .cell_intro-theme {
+  .cell--intro-theme {
     grid-area: 2/2 span;
     @include padding-hor-reset;
-
   }
 
-  .cell_product-type-theme {
+  .cell--product-type-theme {
     grid-area: 1/ 2 span;
   }
 
-  .cell_address-card {
+  .cell--address-card {
     display: grid;
-    grid-template-columns: 20% 25%;
+    grid-template-columns: 50% 50%;
     padding-left: 71px;
     padding-right: 72px;
-    column-gap: 295px;
+    column-gap: 158px;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .cell_inner-first {
-    width: 450px;
-    margin-top: 65px;
-    margin-bottom: 64px;
   }
 }
 
 @media (min-width: 820px) {
 
-  .cell_logo-theme {
+  .cell--logo-theme {
     padding-right: 0;
   }
 
-  .cell_menu-theme {
+  .cell--menu-theme {
     padding-left: 0;
   }
 
-  .cell_inner-first {
+  .cell--inner-first {
     padding-right: 0;
   }
 }
 
 @media (min-width: $sm-desktop-width) {
 
-  .cell_logo-theme {
+  .cell--logo-theme {
     grid-area: 1/1;
     align-self: flex-start;
     z-index: 3;
   }
 
-  .cell_menu-theme {
+  .cell--menu-theme {
     grid-area: 1/2;
     align-self: flex-start;
     z-index: 3;
   }
 
-  .cell_intro-theme {
+  .cell--intro-theme {
     grid-area: 1/1/2/2;
     padding-left: 0;
     padding-right: 0;
   }
 
-  .cell_intro-bg-image {
+  .cell--intro-bg-image {
     grid-area: 1/1/1/1;
     padding-left: 0;
     padding-right: 0;
     display: grid;
-    min-height: 100vh;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
   }
 
-  .cell_address-card {
+  .cell--address-card {
     display: grid;
     grid-template-columns: 40% 46%;
     column-gap: 65px;
@@ -221,14 +203,14 @@
     justify-content: start;
   }
 
-  .cell_base-info-list-theme {
+  .cell--base-info-list-theme {
     padding-right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
 
-  .cell_intro-theme {
+  .cell--intro-theme {
     grid-area: 1/1/1/1;
     padding-left: 0;
     padding-right: 0;
@@ -237,12 +219,12 @@
 
 @media (min-width: $xl-width) {
 
-  .cell_program-field-radio-theme {
+  .cell--program-field-radio-theme {
     width: 480px;
     justify-self: end;
   }
 }
 
-.cell_address-card-inner {
+.cell--address-card-inner {
   background-color: $basic-grey;
 }

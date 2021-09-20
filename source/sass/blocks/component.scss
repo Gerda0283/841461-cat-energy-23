@@ -6,10 +6,10 @@
   &::before {
     content: "";
     position: absolute;
-    left: -45px;
-    top: -4px;
     width: 30px;
     height: 30px;
+    left: -45px;
+    top: -4px;
     border: 1px solid $special_grey;
 
     @media (min-width: $tablet-width) {
@@ -23,10 +23,10 @@
 .component__input:checked + .component__label::after {
   content: "";
   position: absolute;
-  top: 1px;
-  left: -34px;
   width: 8px;
   height: 16px;
+  top: 1px;
+  left: -34px;
   border-right: 2px solid $basic_green;
   border-bottom: 2px solid $basic_green;
   transform: rotate(45deg);
@@ -47,55 +47,46 @@
 .component__input:hover + .component__label::after {
   content: "";
   position: absolute;
-  top: 1px;
-  left: -34px;
   width: 8px;
   height: 16px;
+  top: 1px;
+  left: -34px;
   border-right: 2px solid $basic_green;
   border-bottom: 2px solid $basic_green;
   transform: rotate(45deg);
 
   @media (min-width: $tablet-width) {
-    top: -1px;
-    left: -51px;
     width: 13px;
     height: 24px;
+    top: -1px;
+    left: -51px;
   }
 }
 
-.component__input:disabled + .component__label::before {
+.component__input:disabled + .component__label::before,
+.component__input:hover:disabled + .component__label::before,
+.component__input:hover:checked:disabled + .component__label::before {
   border: 1px solid $special_dark-grey;
   opacity: 0.45;
 }
 
-.component__input:disabled + .component__label {
-  opacity: 0.3;
-  cursor: initial;
-}
-
-.component__input:checked:disabled + .component__label::after {
-  opacity: 1;
-}
-
+.component__input:disabled + .component__label,
 .component__input:checked:disabled + .component__label {
-  opacity: 0.3;
   cursor: initial;
+  opacity: 0.3;
 }
 
-.component__input:hover:disabled + .component__label::before {
-  opacity: 0.45;
-  border: 1px solid $special_dark-grey;
+.component__input:checked:disabled + .component__label::after,
+.component__input:hover:checked:disabled + .component__label::after {
+  opacity: 1;
 }
 
 .component__input:hover:disabled + .component__label::after {
   opacity: 0.45;
 }
 
-.component__input:hover:checked:disabled + .component__label::before {
-  opacity: 0.45;
-  border: 1px solid $special_dark-grey;
-}
-
-.component__input:hover:checked:disabled + .component__label::after {
-  opacity: 1;
+.component__input:disabled + .component__label:hover::after,
+.component__input:hover:disabled + .component__label::after {
+  border-right: 2px solid $basic_green;
+  border-bottom: 2px solid $basic_green;
 }

@@ -8,11 +8,13 @@
   color: $basic_black;
 }
 
-.division-headline_product-type {
+.division-headline--product-type {
 
   grid-area: 1/2;
   margin-top: 30px;
-  margin-bottom: 29px;
+  margin-left: -8px;
+  /*margin-bottom: 29px;*/
+  margin-bottom: 26px;
   text-align: left;
 
   @media (min-width: 321px) and  (max-width: $sm-tablet-width) {
@@ -32,8 +34,9 @@
 
   @media (min-width: $tablet-width) {
     grid-area: 1/1;
-    margin-top: 77px;
-    margin-bottom: 24px;
+    margin-top: 69px;
+    margin-left: 0;
+    margin-bottom: 20px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -50,12 +53,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 76px;
+    margin-left: -12px;
     margin-bottom: 73px;
   }
 }
 
-.division-headline_address-card-theme {
-
+.division-headline--address-card-theme {
+  width: 50%;
   @include margin-h-reset;
   font-size: 16px;
   line-height: 20px;
@@ -75,7 +80,7 @@
   }
 }
 
-.division-headline_product-name {
+.division-headline--product-name {
   @include margin-h-reset;
 
   a {
@@ -85,8 +90,8 @@
 
   @media (max-width: 349px) {
     width: 94px;
-    margin-top: 19px;
-    margin-bottom: 18px;
+    margin-top: 2px;
+    margin-bottom: 13px;
     font-size: 16px;
     line-height: 20px;
     text-align: left;
@@ -94,14 +99,22 @@
 
   @media (min-width: 350px) {
     width: 140px;
-    margin-bottom: 21px;
+    margin-bottom: 14px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
   }
 }
 
-.division-headline_more-cards-theme {
+@media (max-width: 349px) {
+
+  .division-headline--product-name-first {
+    margin-top: 43px;
+    margin-bottom: 12px;
+  }
+}
+
+.division-headline--more-cards-theme {
   width: auto;
   text-align: center;
   padding-bottom: 8px;
@@ -119,12 +132,12 @@
   }
 }
 
-.division-headline_add-component-theme {
+.division-headline--add-component-theme {
   @include margin-h-reset;
 
   @media (max-width: $sm-tablet-width) {
     padding-top: 12px;
-    padding-bottom: 13px;
+    padding-bottom: 9px;
     font-size: 16px;
     line-height: 16px;
   }

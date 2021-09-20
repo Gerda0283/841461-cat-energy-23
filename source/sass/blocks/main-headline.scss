@@ -29,7 +29,7 @@
   }
 }
 
-.main-headline_inner-headline-theme {
+.main-headline--inner-headline-theme {
   @include margin-h-reset;
   margin-top: 27px;
 
@@ -38,11 +38,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: 450px;
+    margin-top: 23px;
+    margin-bottom: 98px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    margin-top: 36px;
+    margin-bottom: 84px;
   }
 }
 
-.main-headline_program-main-theme {
+.main-headline--program-main-theme {
 
   @media (max-width: $mobile-width-only) {
     margin-top: 27px;

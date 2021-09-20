@@ -1,29 +1,35 @@
 .feature {
   @include reset-list;
   display: grid;
-  margin-bottom: 42px;
+  margin-top: 5px;
+  margin-bottom: 40px;
   row-gap: 20px;
 
   @media (max-width: $mobile-width) {
+    min-width: 263px;
     grid-template-columns: 1fr;
   }
 
   @media (min-width: 521px) and (max-width: $mobile-width-only) {
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    column-gap: 47px;
+    column-gap: 35px;
     margin-bottom: 12px;
+  }
+
+  @media (min-width: 700px) {
+    column-gap: 105px;
   }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    column-gap: 157px;
+    column-gap: 134px;
   }
 
   @media (min-width: $sm-desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 22px;
+    column-gap: 20px;
     margin-bottom: 0;
   }
 
@@ -40,7 +46,7 @@
   }
 
   @media (min-width: $xl-width) {
-    column-gap: 100px;
+    column-gap: 101px;
   }
 }
 
@@ -66,7 +72,11 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 25px;
+      margin-top: 35px;
+    }
+
+    @media (min-width: $xl-width) {
+      margin-top: 26px;
     }
   }
 
@@ -88,21 +98,22 @@
   }
 
   @media (min-width: $sm-desktop-width) {
-    width: 200px;
+    width: 198px;
   }
 
   @media (min-width: 1100px) {
-    width: 220px;
+    width: 214px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 230px;
+    width: 224px;
   }
 
   p {
     position: relative;
-    margin-left: 20px;
     @include margin-h-reset;
+    margin-left: 20px;
+    margin-top: 2px;
 
     @media (max-width: $mobile-width) {
       width: 200px;
@@ -113,7 +124,7 @@
     }
 
     @media (min-width: 321px) and (max-width: 399px) {
-      width: 180px;
+      width: 194px;
     }
 
     @media (min-width: 400px) and (max-width: $sm-tablet-width) {
@@ -133,8 +144,9 @@
       }
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: 700px) {
       width: 245px;
+      margin-top: 5px;
       margin-left: 0;
       margin-bottom: 35px;
       font-size: 16px;
@@ -152,6 +164,7 @@
 
     @media (min-width: $desktop-width) {
       width: 240px;
+      margin-top: 0;
     }
   }
 
@@ -194,14 +207,14 @@
   }
 }
 
-.feature__item_icon-number-one {
+.feature__item--icon-number-one {
 
   &::after {
-    margin-top: 15px;
-    margin-left: 16px;
+    margin-top: 14px;
+    margin-left: 15px;
     width: 30px;
     height: 32px;
-    background-image: url(../img/svg/icon_leaf.svg);
+    background-image: url(../img/icons/icon_leaf.svg);
 
     @media (min-width: 521px) {
       margin-top: 25px;
@@ -209,41 +222,51 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 50px;
-      margin-left: 25px;
-    }
-  }
-}
-
-.feature__item_icon-number-two {
-
-  &::after {
-    margin-top: 15px;
-    margin-left: 16px;
-    width: 29px;
-    height: 31px;
-    background-image: url(../img/svg/icon_tub.svg);
-
-    @media (min-width: 521px) {
-      margin-top: 25px;
-      margin-left: 26px
+      margin-top: 60px;
+      margin-left: 24px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $sm-desktop-width) {
       margin-top: 50px;
       margin-left: 26px;
     }
   }
 }
 
-.feature__item_icon-number-three {
+.feature__item--icon-number-two {
+
+  &::after {
+    margin-top: 13px;
+    margin-left: 15px;
+    width: 29px;
+    height: 31px;
+    background-image: url(../img/icons/icon_tub.svg);
+
+    @media (min-width: 521px) {
+      margin-top: 25px;
+      margin-left: 26px
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 59px;
+      margin-left: 25px;
+    }
+
+    @media (min-width: $sm-desktop-width) {
+      margin-top: 50px;
+      margin-left: 26px;
+    }
+  }
+}
+
+.feature__item--icon-number-three {
 
   &::after {
     margin-top: 15px;
     margin-left: 18px;
     width: 25px;
     height: 30px;
-    background-image: url(../img/svg/icon_eat.svg);
+    background-image: url(../img/icons/icon_eat.svg);
 
     @media (min-width: 521px) {
       margin-top: 26px;
@@ -251,20 +274,25 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 51px;
+      margin-top: 60px;
       margin-left: 28px;
+    }
+
+    @media (min-width: $sm-desktop-width) {
+      margin-top: 51px;
+      margin-left: 29px;
     }
   }
 }
 
-.feature__item_icon-number-four {
+.feature__item--icon-number-four {
 
   &::after {
     margin-top: 13px;
     margin-left: 14px;
     width: 32px;
     height: 33px;
-    background-image: url(../img/svg/icon_alarm.svg);
+    background-image: url(../img/icons/icon_alarm.svg);
 
     @media (min-width: 521px) {
       margin-top: 24px;
@@ -272,8 +300,13 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: 48px;
+      margin-top: 58px;
       margin-left: 24px;
+    }
+
+    @media (min-width: $sm-desktop-width) {
+      margin-top: 49px;
+      margin-left: 25px;
     }
   }
 }

@@ -6,7 +6,7 @@
 }
 
 .progress-control__full-bar {
-  width: 50%;
+  width: 40%;
   height: 6px;
   margin: 4px 6px;
   background-color: $basic_green;
@@ -19,9 +19,9 @@
   cursor: pointer;
 }
 
-.progress-control__button_left-slide {
+.progress-control__button--left-slide {
   top: 0;
-  left: 0;
+  left: -1px;
   width: 70px;
   padding-top: 12px;
   @include font-family-headline;
@@ -29,7 +29,7 @@
   text-transform: uppercase;
 }
 
-.progress-control__button_right-slide {
+.progress-control__button--right-slide {
   top: 0;
   right: 0;
   width: 70px;
@@ -50,10 +50,10 @@
 
   .progress-control__full-bar {
     position: absolute;
-    top: -8px;
+    top: -3px;
     left: 43%;
-    width: 39px;
-    height: 39px;
+    width: 34px;
+    height: 34px;
     background-image: radial-gradient(circle, $basic_green 15%, $basic_white 17%, $basic_white 100%);
     border: 1px solid $special_grey;
     border-radius: 50%;
@@ -76,7 +76,7 @@
     cursor: pointer;
   }
 
-  .progress-control__button_left-slide {
+  .progress-control__button--left-slide {
     top: 0;
     left: 0;
     width: 70px;
@@ -97,7 +97,7 @@
     }
   }
 
-  .progress-control__button_right-slide {
+  .progress-control__button--right-slide {
     top: 0;
     right: 0;
     width: 70px;
@@ -122,6 +122,17 @@
 @media (min-width: $tablet-width) {
 
   .progress-control__full-bar {
-    left: 45%;
+    left: 45.85%;
+  }
+
+  .progress-control__button--left-slide {
+    padding-top: 4px;
+  }
+}
+
+@media (min-width: $xl-width) {
+
+  .progress-control__full-bar {
+    left: 46.3%;
   }
 }

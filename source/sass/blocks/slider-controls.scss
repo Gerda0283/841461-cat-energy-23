@@ -1,6 +1,6 @@
 .slider-controls {
-  width: 228px;
-  margin-top: 10px;
+  width: 227px;
+  margin-top: 21px;
   margin-bottom: 25px;
   @include centration;
 
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $sm-desktop-width) and (max-width: 1099px) {
-    width: 435px;
+    width: 400px;
     margin-top: 0;
     margin-bottom: 42px;
   }
@@ -30,10 +30,21 @@
     margin-top: 52px;
     margin-bottom: 52px
   }
+
+  @media (min-width: $xl-width) {
+    width: 590px;
+    margin-top: 36px;
+    margin-left: 120px;
+    margin-bottom: 57px;
+  }
 }
 
 .slider-controls__progress {
   position: relative;
-  padding: 13px 71px;
+  padding: 13px 72px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 80px;
+  }
 }
 

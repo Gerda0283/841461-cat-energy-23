@@ -1,5 +1,15 @@
 .more-cards {
   align-self: center;
+
+  @media (min-width: 350px) {
+    margin-top: -10px;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
 
 .more-cards__item {
@@ -8,20 +18,15 @@
   align-content: center;
 
   @media (min-width: 350px) {
-    padding: 10px 36px 36px 38px;
+    min-height: 408px;
+    padding: 10px 32px 10px 39px;
     border: 2px solid $basic-light-grey-3;
   }
 
-  @media (min-width: 700px) {
-
-  }
-
-  @media (min-width: $tablet-width) {
-
-  }
-
   @media (min-width: $sm-desktop-width) {
-
+    min-height: 300px;
+    padding: 5px 30px 34px 38px;
+    align-self: flex-end;
   }
 }
 
@@ -41,6 +46,8 @@
 
   p {
     @include margin-h-reset;
+    font-size: 12px;
+    line-height: 16px;
     text-align: center;
 
     @media (min-width: 350px) {
@@ -59,8 +66,8 @@
   @include reset-btn;
 
   @media (max-width: 349px) {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 29px;
   }
 
   &:hover,
@@ -96,7 +103,7 @@
 
   @media (min-width: 350px) {
     margin-top: 63px;
-    margin-bottom: 63px;
+    margin-bottom: 67px;
 
     &::before,
     &::after {

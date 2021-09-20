@@ -18,6 +18,7 @@
     "gulp-svgstore": "^8.0.0",
     "gulp-terser": "^2.0.1",
     "gulp-webp": "^4.0.1",
+    "pixel-glass": "^1.0.13",
     "postcss": "^8.3.6",
     "postcss-csso": "^5.0.1",
     "sass": "^1.37.5",

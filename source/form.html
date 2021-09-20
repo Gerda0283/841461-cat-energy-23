@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page page_inner" lang="ru">
+<html class="page page--inner" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,39 +7,39 @@
     <meta name="description" content="Интернет-магазин Функционального питания для котов" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/icon_180.png">
+    <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icons/icon_180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
-  <body class="page-body page-body_inner-form">
+  <body class="page-body page-body--inner-form">
 
-    <header class="main-header main-header_inner">
-      <div class="container container_menu-wrapper">
-        <div class="cell cell_logo-theme cell_logo-theme-inner">
-          <a class="main-header__logo logo-img logo-img_inner-page-theme" href="index.html">
+    <header class="main-header main-header--inner">
+      <div class="container container--menu-wrapper">
+        <div class="cell cell--logo-theme cell--logo-theme-inner">
+          <a class="main-header__logo logo-img logo-img--inner-page-theme" href="index.html">
             <picture>
               <source media="(min-width: 993px)" srcset="img/logo_cat-energy-img_md.svg">
               <source media="(min-width: 521px)" srcset="img/logo_cat-energy-img_sm.svg">
               <img width="191" height="38" src="img/logo_cat-energy-img_xs.svg" alt="Логотип Кэт энерджи" >
-           </picture>
+            </picture>
           </a>
         </div>
-        <div class="cell cell_menu-theme cell_menu-theme-inner">
-          <nav class="main-nav  main-nav_closed main-nav_nojs">
+        <div class="cell cell--menu-theme cell--menu-theme-inner">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__button toggle" type="button">
               <span class="visually-hidden">Открывает меню</span>
             </button>
             <div class="main-nav__wrapper">
-              <ul class="main-nav__list menu-list menu-list_inner">
+              <ul class="main-nav__list menu-list menu-list--inner">
                 <li class="menu-list__item">
                   <a href="index.html">Главная</a>
                 </li>
                 <li class="menu-list__item">
                   <a href="catalog.html">Каталог продукции</a>
                 </li>
-                <li class="menu-list__item menu-list__item_сurrent">
+                <li class="menu-list__item menu-list__item--сurrent">
                   <a>Подбор программы</a>
                 </li>
               </ul>
@@ -49,21 +49,21 @@
       </div>
     </header>
     <main class="program-main">
-      <div class="container container_program-main">
-          <div class="cell cell_inner-first">
-            <h1 class="main-headline main-headline_inner-headline-theme">Подбор программы</h1>
+      <div class="container container--program-main">
+          <div class="cell cell--inner-first">
+            <h1 class="main-headline main-headline--inner-headline-theme">Подбор программы</h1>
             <p>Заполните анкету, и мы подберем<br /> программу питания для вашего кота</p>
           </div>
       </div>
       <form class="program-form" method="POST" action="https://echo.htmlacademy.ru">
         <fieldset class="program-form__field program-field">
           <h2 class="visually-hidden">Данные для формирования заказа</h2>
-          <div class="container container_program-field-theme container_program-field-theme_first">
-            <div class="cell cell_base-info-list-theme">
+          <div class="container container--program-field-theme container--program-field-theme-first">
+            <div class="cell cell--base-info-list-theme">
               <ul class="base-info-list">
                 <li class="base-info-list__item base-info">
                   <label class="base-info-list__label" for="name">Имя:*</label>
-                  <input class="base-info-list__input base-info__first base-info-list__input_error" type="text" name="name" id="name" placeholder="Барсик" required />
+                  <input class="base-info-list__input base-info__first" type="text" name="name" id="name" placeholder="Барсик" required />
                 </li>
                 <li class="base-info-list__item base-info">
                   <label class="base-info-list__label" for="weight">Вес (кг):*</label>
@@ -79,8 +79,8 @@
         </fieldset>
         <fieldset class="program-form__field program-field">
           <h2 class="visually-hidden">Данные для выбора типа диеты</h2>
-          <div class="container container_program-field-theme container_program-field-theme_second">
-            <div class="cell cell_program-field-radio-theme">
+          <div class="container container--program-field-theme container--program-field-theme-second">
+            <div class="cell cell--program-field-radio-theme">
               <ul class="filter-info">
                 <li class="filter-option filter-info__item">
                   <input class="filter-option__input radio-input visually-hidden" type="radio" name="diet" value="weight-loss" id="weight-loss" checked  />
@@ -100,19 +100,19 @@
         </fieldset>
         <fieldset class="program-form__field program-field">
           <h2 class="program-field__legend section-headline">Контактные данные<br /> (владельца кота)</h2>
-          <div class="container container_program-field-theme">
-            <div class="cell cell_contact-info-theme">
+          <div class="container container--program-field-theme">
+            <div class="cell cell--contact-info-theme">
               <ul class="contact-info">
-                <li class="contact-info__item contact-info__item_email">
+                <li class="contact-info__item contact-info__item--email">
                   <label class="contact-info__label" for="email">E-mail:*</label>
                   <input class="contact-info__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" required />
                   <svg class="contact-info__svg" width="20" height="15">
                     <use xlink:href="img/sprite.svg#mail"></use>
                   </svg>
                 </li>
-                <li class="contact-info__item contact-info__item_tel">
+                <li class="contact-info__item contact-info__item--tel">
                   <label class="contact-info__label" for="phone-number">Телефон:*</label>
-                  <input class="contact-info__input contact-info__input_error" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90"  required />
+                  <input class="contact-info__input contact-info__input--error" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required />
                   <svg class="contact-info__svg" width="20" height="21">
                     <use xlink:href="img/sprite.svg#phone"></use>
                   </svg>
@@ -120,14 +120,15 @@
               </ul>
             </div>
           </div>
-          <h2 class="program-field__legend section-headline program-field__legend_headline-second">Комментарий</h2>
-          <div class="container container_program-field-theme">
+          <h2 class="program-field__legend section-headline program-field__legend--headline-second">Комментарий</h2>
+          <div class="container container--program-field-theme">
             <div class="cell">
-              <textarea class="comment-info" rows="6" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
+              <textarea class="comment-info"  id="comment" rows="6" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
-          <h2 class="program-field__legend section-headline program-field__legend_headline-third">Дополнительно</h2>
-          <div class="container container_program-field-theme">
+          <h2 class="program-field__legend section-headline program-field__legend--headline-third">Дополнительно</h2>
+          <div class="container container--program-field-theme">
             <div class="cell">
               <ul class="additional-list">
                 <li class="additional-list__item component">
@@ -150,7 +151,7 @@
             </div>
           </div>
         </fieldset>
-        <div class="container container_submit-form-theme">
+        <div class="container container--submit-form-theme">
           <div class="cell submit-form">
             <button class="submit-form__button button" type="submit">отправить заявку</button>
           </div>
@@ -162,9 +163,9 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__contacts">
-        <div class="container container_address-card-theme">
-          <div class="cell address-card cell_address-card">
-              <h3 class="division-headline division-headline_address-card-theme">Приглашаем к сотрудничеству дилеров!</h3>
+        <div class="container container--address-card-theme ncontainer--address-card-inner">
+          <div class="cell address-card cell--address-card">
+              <h3 class="division-headline division-headline--address-card-theme">Приглашаем к сотрудничеству дилеров!</h3>
               <p class="address-card__text">
                 <a class="address-card__link" href="https://earth.google.com/earth/d/1EmzE32nJNXyGby7pe_Gw-vpLbY2DAbhk?usp=sharing" target="blanc">Открыть карту<br /></a>
                 ул. Большая Конюшенная, д. 19/8 <span class="address-card__last-line">Санкт-Петербург</span>
@@ -175,16 +176,16 @@
           <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6033013998237!2d30.32136833545218!3d59.938724543317974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbg!4v1628524693742!5m2!1sru!2sbg" width="320" height="362" allowfullscreen="" loading="lazy">
           </iframe>
         </div>
-        <div class="container container_main-footer-theme">
+        <div class="container container--main-footer-theme">
           <div class="cell main-footer-logo">
-            <a class="main-footer-logo__logo-text">
+            <a class="main-footer-logo__logo-text" href="index.html">
               <img src="img/logo_cat-energy_footer.svg" width="128" height="24" alt="Логотекст «Кэт энерджи»">
             </a>
           </div>
-          <div class="cell cell_social-theme">
+          <div class="cell cell--social-theme">
             <ul class="social-list">
               <li class="social-list__item">
-                <a class="social-link social-link_vkontakte" href="https://vk.com/htmlacademy">
+                <a class="social-link social-link--vkontakte" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Мы в Вконтакте</span>
                   <svg width="23" height="16">
                     <use xlink:href="img/sprite.svg#vk"></use>
@@ -192,7 +193,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-link social-link_instagram" href="https://www.instagram.com/htmlacademy">
+                <a class="social-link social-link--instagram" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Мы в Инстаграме</span>
                   <svg width="16" height="16">
                     <use xlink:href="img/sprite.svg#insta"></use>
@@ -200,7 +201,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-link social-link_facebook" href="https://www.facebook.com/htmlacademy">
+                <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                   <svg width="10" height="16">
                     <use xlink:href="img/sprite.svg#fb"></use>
@@ -218,4 +219,3 @@
     <script src="js/script.min.js"></script>
   </body>
 </html>
-

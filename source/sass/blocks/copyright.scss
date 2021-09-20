@@ -7,7 +7,7 @@
     min-height: 78px;
   }
 
-  @media (min-width: 800px) and (max-width: 992px) {
+  @media (min-width: 800px) {
     padding-left: 0;
   }
 
@@ -24,7 +24,7 @@
   color: $special_dark-grey-2;
 
   @media (min-width: $tablet-width) {
-    padding-left: 20px;
+    padding-left: 32px;
   }
 
   @media (min-width: 820px) {
@@ -36,18 +36,18 @@
   &::before {
     content: "";
     position: absolute;
-    top: -4px;
-    right: 0;
-    align-self: center;
     width: 27px;
     height: 34px;
-    background-image: url(../img/svg/htmlacademy.svg);
+    top: -6px;
+    right: 0;
+    align-self: center;
+    background-image: url(../img/icons/htmlacademy.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 
     @media (min-width: $tablet-width) {
       right: 0;
-      left: 158px;
+      left: 168px;
     }
 
     @media (min-width: $desktop-width) {
@@ -57,15 +57,13 @@
 
   &:hover::before,
   &:focus::before {
-    width: 27px;
-    height: 34px;
-    background-image: url(../img/svg/htmlacademy_hover.svg);
+    background-image: url(../img/icons/htmlacademy_hover.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   &:active::before {
-    background-image: url(../img/svg/htmlacademy.svg);
+    background-image: url(../img/icons/htmlacademy.svg);
     opacity: 0.3;
   }
 

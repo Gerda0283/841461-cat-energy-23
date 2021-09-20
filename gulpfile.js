@@ -57,27 +57,50 @@ exports.minifyScripts = minifyScripts;
 
 //Images
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src(["source/img/index/xs/*.{png,jpg}",
+  "source/img/index/xs/*.{png,jpg}",
+  "source/img/index/sm/*.{png,jpg}",
+  "source/img/index/md/*.{png,jpg}"])
   .pipe(squoosh())
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("build/img/index"));
 }
 
 exports.optimizeImages = optimizeImages;
 
+//Backgrounds
+const optimizeBgs = () => {
+  return gulp.src("source/img/bg/**/*.{png,jpg}")
+  .pipe(squoosh())
+  .pipe(gulp.dest("build/img/bg"));
+}
+
+exports.optimizeBgs = optimizeBgs;
+
 //Copy Images
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-  .pipe(gulp.dest("build/img"));
+  return gulp.src(["source/img/svg/*.svg",
+  "source/img/favicon/*.{svg,png}"])
+  .pipe(gulp.dest("build/img/icons"));
 }
 
 exports.copyImages = copyImages;
 
+//Copy Logo
+const copyLogo = () => {
+  return gulp.src("source/img/logo/*.svg")
+  .pipe(gulp.dest("build/img"));
+}
+
+exports.copyLogo = copyLogo;
+
 //Webp
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src(["source/img/catalog/xs/*.{png,jpg}",
+  "source/img/catalog/sm/*.{png,jpg}",
+  "source/img/catalog/md/*.{png,jpg}"])
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("build/img/catalog"));
 }
 
 exports.createWebp = createWebp;
@@ -94,11 +117,12 @@ const sprite = () => {
 exports.sprite = sprite;
 
 //Copy
+
 const copy = (done) => {
   gulp.src(["source/fonts/*.{woff2, woff}",
   "source/*.ico",
-  "source/img/**/*.svg",
-  "!source/img/icons_sprite/*.svg"
+  "source/*.webmanifest",
+  "!source/img"
 ], {
   base: "source"
 })
@@ -149,7 +173,10 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   copy,
+  copyImages,
+  copyLogo,
   optimizeImages,
+  optimizeBgs,
   gulp.parallel (
     styles,
     html,
@@ -165,6 +192,9 @@ exports.default = gulp.series(
   clean,
   copy,
   copyImages,
+  copyLogo,
+  optimizeImages,
+  optimizeBgs,
   gulp.parallel (
     styles,
     minifyScripts,

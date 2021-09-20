@@ -34,10 +34,10 @@
 
   &::after {
     content: "";
-    width: 33%;
+    width: 29%;
     height: 2px;
     margin-top: 14px;
-    margin-left: 20px;
+    margin-left: 18px;
     background-color: $basic_green;
   }
 
@@ -161,7 +161,7 @@
   }
 }
 
-.program-field__legend_headline-second {
+.program-field__legend--headline-second {
 
   &::after {
     width: 53%;
@@ -204,7 +204,7 @@
   }
 }
 
-.program-field__legend_headline-third {
+.program-field__legend--headline-third {
   margin-top: 22px;
   margin-bottom: 34px;
 

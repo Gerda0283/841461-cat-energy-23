@@ -29,17 +29,13 @@
   }
 
   @media (min-width: $xl-width) {
-    padding-top: 70px;
+    padding-top: 82px;
     column-gap: 80px;
   }
 }
 
 .product-type-list__item {
   @include padding-min;
-
-  @media (min-width: 321px) and (max-width: $sm-tablet-width) {
-    @include padding-s;
-  }
 
   @media (min-width: 521px) and (max-width: 699px) {
     @include padding-sm;

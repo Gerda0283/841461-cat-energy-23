@@ -7,15 +7,16 @@
   min-height: 65px;
   background-color: $basic_white;
 
-  @media (min-width: $sm-desktop-width) {
+ /* @media (min-width: $sm-desktop-width) {
     grid-template-rows: 30vh 70vh;
-  }
+  }*/
 
   @media (min-width: $xl-width) {
     position: relative;
     grid-area: 1/1/2/2;
     width: 100%;
-    background-image: url(../img/index/md/cat-desktop_md.jpg);
+    min-height: 694px;
+    background-image: url(../img/bg/md/cat-desktop_md.jpg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 50%;
@@ -31,37 +32,12 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/index/md/cat-desktop_md-2x.jpg);
-    }
-
-    @media (min-height: $height-s) {
-      max-height: 85vh;
-
-      &::before {
-        max-height: 85vh;
-      }
-    }
-
-
-    @media (min-height: $height-m) {
-      max-height: 82vh;
-
-      &::before {
-        max-height: 82vh;
-      }
-    }
-
-    @media (min-height: $height-l) {
-      max-height: 75vh;
-
-      &::before {
-        max-height: 75vh;
-      }
+      background-image: url(../img/bg/md/cat-desktop_md-2x.jpg);
     }
   }
 }
 
-.main-header_inner {
+.main-header--inner {
   min-height: 65px;
   grid-template-rows: auto;
   background-image: none;

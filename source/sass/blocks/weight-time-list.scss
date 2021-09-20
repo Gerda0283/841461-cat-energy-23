@@ -6,13 +6,17 @@
   align-items: center;
   flex-wrap: wrap;
 
-  @media (min-width: 993px) and (max-width: 1099px) {
+  @media (min-width: 521px) and (max-width: $mobile-width-only) {
+    align-self: start;
+  }
+
+  @media (min-width: $sm-tablet-width) and (max-width: 1099px) {
     justify-content: flex-start;
   }
 
   .weight-time-list__span {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 16px;
     @include font-family-headline;
     font-size: 24px;
     line-height: 24px;
@@ -64,11 +68,13 @@
         width: 142px;
         align-self: flex-end;
         font-size: 16px;
+        line-height: 27px;
         text-align: right;
       }
 
       @media (min-width: $tablet-width) {
         width: 174px;
+        padding-top: 7px;
         align-self: flex-end;
         font-size: 20px;
         line-height: 29px;
@@ -85,6 +91,10 @@
           width: 63px;
         }
       }
+
+      @media (min-width: $xl-width) {
+        padding: 0 0;
+      }
     }
   }
 
@@ -92,7 +102,7 @@
     position: relative;
     @include margin-h-reset;
     width: 78px;
-    margin-top: -7px;
+    margin-top: -8px;
     padding: 0 4px;
     font-size: 12px;
     line-height: 12px;
@@ -105,6 +115,7 @@
     }
 
     @media (min-width: $tablet-width) {
+      width: 128px;
       font-size: 14px;
       line-height: 14px;
       background-color: $basic_white;
@@ -115,7 +126,7 @@
     }
 
     @media (min-width: $sm-desktop-width) {
-      width: 78px;
+      width: 108px;
       padding: 0 4px;
       font-size: 12px;
       line-height: 12px;
@@ -126,10 +137,17 @@
       width: 120px;
       padding: 0 2px;
     }
+
+    @media (min-width: $xl-width) {
+      width: 130px;
+      padding: 2px 2px;
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }
 
-.weight-time-list__item_costs-theme {
+.weight-time-list__item--costs-theme {
   grid-area: 2/2 span;
 
   @media (min-width: 521px) and (max-width: $mobile-width-only) {

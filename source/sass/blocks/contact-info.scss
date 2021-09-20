@@ -73,6 +73,7 @@
 }
 
 .contact-info__input {
+  max-width: 100%;
   padding-top: 13px;
   padding-left: 13px;
   padding-bottom: 13px;
@@ -91,8 +92,8 @@
   }
 }
 
-.contact-info__item_email,
-.contact-info__item_tel {
+.contact-info__item--email,
+.contact-info__item--tel {
   position: relative;
 }
 
@@ -101,7 +102,7 @@
   position: absolute;
 }
 
-.contact-info__item_email {
+.contact-info__item--email {
 
   .contact-info__svg {
     top: 20px;
@@ -124,7 +125,7 @@
   }
 }
 
-.contact-info__item_tel {
+.contact-info__item--tel {
 
   .contact-info__svg {
     top: 16px;
@@ -144,6 +145,15 @@
   }
 }
 
+.contact-info__input {
+
+  &:focus:invalid,
+  &:not(:placeholder-shown):invalid {
+    border-color: $basic-red;
+  }
+}
+
+
 .contact-info__input:hover ~ .contact-info__svg,
 .contact-info__svg:hover .contact-info__input {
   fill: $basic_green;
@@ -154,7 +164,12 @@
   fill: $basic_green;
 }
 
-.contact-info__input_error {
+.contact-info__input:focus:invalid ~ .contact-info__svg,
+.contact-info__input:not(:placeholder-shown):invalid ~ .contact-info__svg {
+  fill: $basic-red;
+}
+
+/*.contact-info__input--error {
   border: 1px solid $basic-red;
 
   &:hover {
@@ -165,16 +180,16 @@
     border: 1px solid $special_dark-grey;
   }
 }
-.contact-info__input_error ~ .contact-info__svg {
+.contact-info__input--error ~ .contact-info__svg {
   fill: $basic-red;
 }
 
-.contact-info__input_error:hover ~ .contact-info__svg,
-.contact-info__svg:hover .contact-info__input_error {
+.contact-info__input--error:hover ~ .contact-info__svg,
+.contact-info__svg:hover .contact-info__input--error {
   fill: $basic-red;
 }
 
-.contact-info__input_error:focus ~ .contact-info__svg,
-.contact-info__svg:focus .contact-info__input_error {
+.contact-info__input--error:focus ~ .contact-info__svg,
+.contact-info__svg:focus .contact-info__input--error {
   fill: $basic_green;
-}
+}*/

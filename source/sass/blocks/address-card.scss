@@ -1,18 +1,51 @@
 .address-card {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  @media (min-width: 700px) {
+    grid-area: 1/2 span;
+    padding-top: 58px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: 820px) {
+    @include padding-m-l;
+  }
+
+  @media (min-width: $sm-desktop-width) {
+    grid-area: 1/1 span;
+    width: 450px;
+    margin-left: 60px;
+    @include padding-l;
+    column-gap: 80px;
+    background-color: $basic_white;
+  }
+
+  @media (min-width: 1300px) {
+    margin-left: 100px;
+  }
+
+  @media (min-width:  $xl-width) {
+    margin-left: 110px;
+    padding-top: 49px;
+    padding-left: 70px;
+    padding-right: 48px;
+    padding-bottom: 54px;
+  }
 
   p {
+    width: 50%;
     @include margin-h-reset;
+    margin-right: 3px;
+    text-align: left;
     line-height: 20px;
 
-    @media (min-width: 321px) and (max-width: $mobile-width-only) {
+    @media (min-width: 321px) and (max-width: 699px) {
       width: 140px;
       text-align: right;
     }
 
     @media (min-width: 700px) {
-      width: 160px;
       text-align: right;
 
       .address-card__last-line {
@@ -25,38 +58,9 @@
       text-align: left;
     }
   }
-
-  @media (min-width: 700px) {
-    grid-area: 1/2 span;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  @media (min-width: 820px) {
-    @include padding-m-l;
-  }
-
-  @media (min-width: $sm-desktop-width) {
-    grid-area: 1/1 span;
-    width: 450px;
-    margin-left: 60px;
-    column-gap: 80px;
-    padding-top: 40px;
-    @include padding-l;
-    background-color: $basic_white;
-  }
-
-  @media (min-width: 1300px) {
-    margin-left: 100px;
-  }
-
-  @media (min-width:  $xl-width) {
-    margin-left: 110px;
-  }
 }
 
 .address-card__link {
-
   display: none;
 
   @media (min-width: $sm-desktop-width) {

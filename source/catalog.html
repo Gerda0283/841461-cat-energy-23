@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page page_inner" lang="ru">
+<html class="page page--inner" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,35 +7,35 @@
     <meta name="description" content="Интернет-магазин Функционального питания для котов" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/icon_180.png">
+    <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icons/icon_180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page-body page-body_inner">
-    <header class="main-header main-header_inner">
-      <div class="container container_menu-wrapper">
-        <div class="cell cell_logo-theme cell_logo-theme-inner">
-          <a class="main-header__logo logo-img logo-img_inner-page-theme" href="index.html">
+    <header class="main-header main-header--inner">
+      <div class="container container--menu-wrapper">
+        <div class="cell cell--logo-theme cell--logo-theme-inner">
+          <a class="main-header__logo logo-img logo-img--inner-page-theme" href="index.html">
             <picture>
               <source media="(min-width: 993px)" srcset="img/logo_cat-energy-img_md.svg">
               <source media="(min-width: 521px)" srcset="img/logo_cat-energy-img_sm.svg">
               <img width="191" height="38" src="img/logo_cat-energy-img_xs.svg" alt="Логотип Кэт энерджи" >
-           </picture>
+            </picture>
           </a>
         </div>
-        <div class="cell cell_menu-theme cell_menu-theme-inner">
-          <nav class="main-nav  main-nav_closed main-nav_nojs">
+        <div class="cell cell--menu-theme cell--menu-theme-inner">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__button toggle" type="button">
               <span class="visually-hidden">Открывает меню</span>
             </button>
             <div class="main-nav__wrapper">
-              <ul class="main-nav__list menu-list menu-list_inner">
+              <ul class="main-nav__list menu-list menu-list--inner">
                 <li class="menu-list__item">
                   <a href="index.html">Главная</a>
                 </li>
-                <li class="menu-list__item menu-list__item_сurrent">
+                <li class="menu-list__item menu-list__item--сurrent">
                   <a>Каталог продукции</a>
                 </li>
                 <li class="menu-list__item">
@@ -50,18 +50,18 @@
     <main class="catalog-main">
       <section class="section-catalog">
         <div class="container">
-          <div class="cell cell_inner-first">
-            <h1 class="main-headline main-headline_inner-headline-theme">Каталог продукции</h1>
+          <div class="cell cell--inner-first">
+            <h1 class="main-headline main-headline--inner-headline-theme">Каталог продукции</h1>
           </div>
         </div>
         <h2 class="visually-hidden">Основные товары</h2>
-        <div class="container container_catalog-list-theme">
-            <div class="cell cell_catalog-list-theme catalog-list">
+        <div class="container container--catalog-list-theme">
+            <div class="cell cell--catalog-list-theme catalog-list">
               <div class="catalog-list__item product">
                 <div class="product__container card">
-                  <table class="product-data">
+                  <table class="product-data product-data--first-product">
                     <caption class="product-data__caption">
-                      <h3 class="division-headline division-headline_product-name">
+                      <h3 class="division-headline division-headline--product-name division-headline--product-name-first">
                         <a href="blank.html">
                         Cat Energy PRO 500 г
                         </a>
@@ -91,9 +91,9 @@
                   <a class="card__button button" href="blank.html" >заказать</a>
                   <a class="card__img-container card__link" href="blank.html" aria-label="Перейти на страницу товара">
                     <picture>
-                      <source media="(min-width: 993px)" srcset="img/catalog/md/cat_energy_pro_500_chick_md.webp 1x, img/catalog/md/cat_energy_pro_500_chick_md-2x.webp 2x">
-                      <source media="(min-width: 350px)" srcset="img/catalog/sm/cat_energy_pro_500_chick_sm.webp 1x, img/catalog/sm/cat_energy_pro_500_chick_sm-2x.webp 2x">
-                      <img class="card__img visible-xs" src="img/catalog/xs/cat_energy_pro_500_chick_xs.webp" srcset="img/catalog/xs/cat_energy_pro_500_chick_xs-2x.webp 2x" width="68" height="78" alt="Маленькая упаковка кошачьей Вау-Курочки" />
+                      <source media="(min-width: 993px)" srcset="img/catalog/cat_energy_pro_500_chick_md.webp 1x, img/catalog/cat_energy_pro_500_chick_md-2x.webp 2x">
+                      <source media="(min-width: 350px)" srcset="img/catalog/cat_energy_pro_500_chick_sm.webp 1x, img/catalog/cat_energy_pro_500_chick_sm-2x.webp 2x">
+                      <img class="card__img visible-xs" src="img/catalog/cat_energy_pro_500_chick_xs.webp" srcset="img/catalog/xs/cat_energy_pro_500_chick_xs-2x.webp 2x" width="68" height="78" alt="Маленькая упаковка кошачьей Вау-Курочки" />
                     </picture>
                   </a>
                 </div>
@@ -102,7 +102,7 @@
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
-                      <h3 class="division-headline division-headline_product-name">
+                      <h3 class="division-headline division-headline--product-name">
                         <a href="blank.html">
                         Cat Energy PRO 1000 г
                         </a>
@@ -132,9 +132,9 @@
                   <a class="card__button button" href="blank.html" >заказать</a>
                   <a class="card__img-container card__link" href="blank.html" aria-label="Перейти на страницу товара">
                     <picture>
-                      <source media="(min-width: 993px)" srcset="img/catalog/md/cat_energy_pro_1000_chick_md.webp 1x, img/catalog/md/cat_energy_pro_1000_chick_md.webp 2x">
-                      <source media="(min-width: 350px)" srcset="img/catalog/sm/cat_energy_pro_1000_chick_sm.webp 1x, img/catalog/sm/cat_energy_pro_1000_chick_sm.webp 2x">
-                      <img class="card__img visible-xs" src="img/catalog/xs/cat_energy_pro_1000_chick_xs.webp" srcset="img/catalog/xs/cat_energy_pro_1000_chick_xs.webp 2x" width="84" height="100" alt="Большая упаковка кошачьей Вау-Курочки" />
+                      <source media="(min-width: 993px)" srcset="img/catalog/cat_energy_pro_1000_chick_md.webp 1x, img/catalog/cat_energy_pro_1000_chick_md.webp 2x">
+                      <source media="(min-width: 350px)" srcset="img/catalog/cat_energy_pro_1000_chick_sm.webp 1x, img/catalog/cat_energy_pro_1000_chick_sm.webp 2x">
+                      <img class="card__img visible-xs" src="img/catalog/cat_energy_pro_1000_chick_xs.webp" srcset="img/catalog/cat_energy_pro_1000_chick_xs.webp 2x" width="84" height="100" alt="Большая упаковка кошачьей Вау-Курочки" />
                     </picture>
                   </a>
                 </div>
@@ -143,7 +143,7 @@
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
-                      <h3 class="division-headline division-headline_product-name">
+                      <h3 class="division-headline division-headline--product-name">
                         <a href="blank.html">
                         Cat Energy PRO 500 г
                         </a>
@@ -173,9 +173,9 @@
                   <a class="card__button button" href="blank.html" >заказать</a>
                   <a class="card__img-container card__link" href="blank.html" aria-label="Перейти на страницу товара">
                     <picture>
-                      <source media="(min-width: 993px)" srcset="img/catalog/md/cat_energy_pro_500_fish_md.webp 1x, img/catalog/md/cat_energy_pro_500_fish_md-2x.webp 2x">
-                      <source media="(min-width: 350px)" srcset="img/catalog/sm/cat_energy_pro_500_fish_sm.webp 1x, img/catalog/sm/cat_energy_pro_500_fish_sm-2x.webp 2x">
-                      <img class="card__img visible-xs" src="img/catalog/xs/cat_energy_pro_500_fish_xs.webp" srcset="img/catalog/xs/cat_energy_pro_500_fish_xs-2x.webp 2x" width="68" height="78" alt="Маленькая упаковка кошачьей Вау-Рыбки" />
+                      <source media="(min-width: 993px)" srcset="img/catalog/cat_energy_pro_500_fish_md.webp 1x, img/catalog/cat_energy_pro_500_fish_md-2x.webp 2x">
+                      <source media="(min-width: 350px)" srcset="img/catalog/cat_energy_pro_500_fish_sm.webp 1x, img/catalog/cat_energy_pro_500_fish_sm-2x.webp 2x">
+                      <img class="card__img visible-xs" src="img/catalog/cat_energy_pro_500_fish_xs.webp" srcset="img/catalog/cat_energy_pro_500_fish_xs-2x.webp 2x" width="68" height="78" alt="Маленькая упаковка кошачьей Вау-Рыбки" />
                     </picture>
                   </a>
                 </div>
@@ -184,7 +184,7 @@
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
-                      <h3 class="division-headline division-headline_product-name">
+                      <h3 class="division-headline division-headline--product-name">
                         <a href="blank.html">
                         Cat Energy PRO 1000 г
                         </a>
@@ -214,9 +214,9 @@
                   <a class="card__button button" href="blank.html" >заказать</a>
                   <a class="card__img-container card__link" href="blank.html" aria-label="Перейти на страницу товара">
                     <picture>
-                      <source media="(min-width: 993px)" srcset="img/catalog/md/cat_energy_pro_1000_fish_md.webp 1x, img/catalog/md/cat_energy_pro_1000_fish_md-2x.webp 2x">
-                      <source media="(min-width: 350px)" srcset="img/catalog/sm/cat_energy_pro_1000_fish_sm.webp 1x, img/catalog/sm/cat_energy_pro_1000_fish_sm-2x.webp 2x">
-                      <img class="card__img visible-xs" src="img/catalog/xs/cat_energy_pro_1000_fish_xs.webp" srcset="img/catalog/xs/cat_energy_pro_1000_fish_xs-2x.webp 2x" width="84" height="100" alt="Большая упаковка кошачьей Вау-Рыбки" />
+                      <source media="(min-width: 993px)" srcset="img/catalog/cat_energy_pro_1000_fish_md.webp 1x, img/catalog/cat_energy_pro_1000_fish_md-2x.webp 2x">
+                      <source media="(min-width: 350px)" srcset="img/catalog/cat_energy_pro_1000_fish_sm.webp 1x, img/catalog/cat_energy_pro_1000_fish_sm-2x.webp 2x">
+                      <img class="card__img visible-xs" src="img/catalog/cat_energy_pro_1000_fish_xs.webp" srcset="img/catalog/cat_energy_pro_1000_fish_xs-2x.webp 2x" width="84" height="100" alt="Большая упаковка кошачьей Вау-Рыбки" />
                     </picture>
                   </a>
                 </div>
@@ -225,7 +225,7 @@
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
-                      <h3 class="division-headline division-headline_product-name">
+                      <h3 class="division-headline division-headline--product-name">
                         <a href="blank.html">
                         Cat Energy Slim 500 г
                         </a>
@@ -255,9 +255,9 @@
                   <a class="card__button button" href="blank.html" >заказать</a>
                   <a class="card__img-container card__link" href="blank.html" aria-label="Перейти на страницу товара">
                     <picture>
-                      <source media="(min-width: 993px)" srcset="img/catalog/md/cat_energy_slim_500_buсkwheat_md.webp 1x, img/catalog/md/cat_energy_slim_500_buсkwheat_md-2x.webp 2x">
-                      <source media="(min-width: 350px)" srcset="img/catalog/sm/cat_energy_slim_500_buсkwheat_sm.webp 1x, img/catalog/sm/cat_energy_slim_500_buсkwheat_sm-2x.webp 2x">
-                      <img class="card__img visible-xs" src="img/catalog/xs/cat_energy_slim_500_buсkwheat_xs.webp" srcset="img/catalog/xs/cat_energy_slim_500_buсkwheat_xs-2x.webp 2x" width="68" height="78" alt="Маленькая упаковка кошачьей Вау-Гречки" />
+                      <source media="(min-width: 993px)" srcset="img/catalog/cat_energy_slim_500_buсkwheat_md.webp 1x, img/catalog/cat_energy_slim_500_buсkwheat_md-2x.webp 2x">
+                      <source media="(min-width: 350px)" srcset="img/catalog/cat_energy_slim_500_buсkwheat_sm.webp 1x, img/catalog/cat_energy_slim_500_buсkwheat_sm-2x.webp 2x">
+                      <img class="card__img visible-xs" src="img/catalog/cat_energy_slim_500_buсkwheat_xs.webp" srcset="img/catalog/cat_energy_slim_500_buсkwheat_xs-2x.webp 2x" width="68" height="78" alt="Маленькая упаковка кошачьей Вау-Гречки" />
                     </picture>
                   </a>
                 </div>
@@ -266,7 +266,7 @@
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
-                      <h3 class="division-headline division-headline_product-name">
+                      <h3 class="division-headline division-headline--product-name">
                         <a href="blank.html">
                         Cat Energy Slim 1000 г
                         </a>
@@ -296,9 +296,9 @@
                   <a class="card__button button" href="blank.html" >заказать</a>
                   <a class="card__img-container card__link" href="blank.html" aria-label="Перейти на страницу товара">
                     <picture>
-                      <source media="(min-width: 993px)" srcset="img/catalog/md/cat_energy_slim_1000_buсkwheat_md.webp 1x, img/catalog/md/cat_energy_slim_1000_buсkwheat_md-2x.webp 2x">
-                      <source media="(min-width: 350px)" srcset="img/catalog/sm/cat_energy_slim_1000_buсkwheat_sm.webp 1x, img/catalog/sm/cat_energy_slim_1000_buсkwheat_sm-2x.webp 2x">
-                      <img class="card__img visible-xs" src="img/catalog/xs/cat_energy_slim_1000_buсkwheat_xs.webp" srcset="img/catalog/xs/cat_energy_slim_1000_buсkwheat_xs-2x.webp 2x" width="84" height="100" alt="Большая упаковка кошачьей Вау-Гречки" />
+                      <source media="(min-width: 993px)" srcset="img/catalog/cat_energy_slim_1000_buсkwheat_md.webp 1x, img/catalog/cat_energy_slim_1000_buсkwheat_md-2x.webp 2x">
+                      <source media="(min-width: 350px)" srcset="img/catalog/cat_energy_slim_1000_buсkwheat_sm.webp 1x, img/catalog/cat_energy_slim_1000_buсkwheat_sm-2x.webp 2x">
+                      <img class="card__img visible-xs" src="img/catalog/cat_energy_slim_1000_buсkwheat_xs.webp" srcset="img/catalog/cat_energy_slim_1000_buсkwheat_xs-2x.webp 2x" width="84" height="100" alt="Большая упаковка кошачьей Вау-Гречки" />
                     </picture>
                   </a>
                 </div>
@@ -307,7 +307,7 @@
                 <div class="product__container card">
                   <table class="product-data">
                     <caption class="product-data__caption">
-                      <h3 class="division-headline division-headline_product-name">
+                      <h3 class="division-headline division-headline--product-name">
                         <a href="blank.html">
                         Cat Energy Slim 500 г
                         </a>
@@ -337,9 +337,9 @@
                   <a class="card__button button" href="blank.html" >заказать</a>
                   <a class="card__img-container card__link" href="blank.html" aria-label="Перейти на страницу товара">
                     <picture>
-                      <source media="(min-width: 993px)" srcset="img/catalog/md/cat_energy_slim_500_rice_md.webp 1x, img/catalog/md/cat_energy_slim_500_rice_md-2x.webp 2x">
-                      <source media="(min-width: 350px)" srcset="img/catalog/sm/cat_energy_slim_500_rice_sm.webp 1x, img/catalog/sm/cat_energy_slim_500_rice_sm-2x.webp 2x">
-                      <img class="card__img visible-xs" src="img/catalog/xs/cat_energy_slim_500_rice_xs.webp" srcset="img/catalog/xs/cat_energy_slim_500_rice_xs-2x.webp 2x" width="68" height="78" alt="Маленькая упаковка кошачьего Вау-Риса" />
+                      <source media="(min-width: 993px)" srcset="img/catalog/cat_energy_slim_500_rice_md.webp 1x, img/catalog/cat_energy_slim_500_rice_md-2x.webp 2x">
+                      <source media="(min-width: 350px)" srcset="img/catalog/cat_energy_slim_500_rice_sm.webp 1x, img/catalog/cat_energy_slim_500_rice_sm-2x.webp 2x">
+                      <img class="card__img visible-xs" src="img/catalog/cat_energy_slim_500_rice_xs.webp" srcset="img/catalog/cat_energy_slim_500_rice_xs-2x.webp 2x" width="68" height="78" alt="Маленькая упаковка кошачьего Вау-Риса" />
                     </picture>
                   </a>
                 </div>
@@ -347,21 +347,21 @@
               <div class="more-cards">
                 <div class="more-cards__item">
                   <div class="more-cards__caption">
-                    <h3 class="division-headline division-headline_more-cards-theme">Показать еще 100500 товаров</h3>
+                    <h3 class="division-headline division-headline--more-cards-theme">Показать еще 100500 товаров</h3>
                     <p>На самом деле вкусов гораздо больше!</p>
                   </div>
                   <button class="more-cards__button button">
                     <span class="visually-hidden">Показать больше товаров</span>
                   </button>
-                  <button class="button_more-product button">Показать все</button>
+                  <button class="button--more-product button">Показать все</button>
                 </div>
               </div>
             </div>
         </div>
       </section>
       <section class="catalog-additives">
-        <h2 class="section-headline section-headline_additives-theme">Дополнительные товары</h2>
-        <div class="container container_additives-theme">
+        <h2 class="section-headline section-headline--additives-theme">Дополнительные товары</h2>
+        <div class="container container--additives-theme">
           <div class="cell additives">
               <table class="additives__data">
                 <thead class="visually-hidden">
@@ -374,28 +374,28 @@
                 </thead>
                 <tbody class="additives__characteristics add-component">
                   <tr class="add-component__tr">
-                    <td class="add-component__td"><h3 class="division-headline division-headline_add-component-theme">Сахаро&shy;заменитель</h3></td>
+                    <td class="add-component__td"><h3 class="division-headline division-headline--add-component-theme">Сахаро&shy;заменитель</h3></td>
                     <td class="add-component__td"><p>1 упаковка<wbr> (100 г)</p></td>
                     <td class="add-component__td"><p>200 р.</p></td>
-                    <td class="add-component__td"><a class="button button_btn-container-theme" href="blank.html" >заказать</a></td>
+                    <td class="add-component__td"><a class="button button--btn-container-theme" href="blank.html" >заказать</a></td>
                   </tr>
                   <tr class="add-component__tr">
-                    <td class="add-component__td"><h3 class="division-headline division-headline_add-component-theme">питьевая вода</h3></td>
+                    <td class="add-component__td"><h3 class="division-headline division-headline--add-component-theme">питьевая вода</h3></td>
                     <td class="add-component__td"><p>5 литров</p></td>
                     <td class="add-component__td"><p>50 р.</p></td>
-                    <td class="add-component__td"><a class="button button_btn-container-theme" href="blank.html" >заказать</a></td>
+                    <td class="add-component__td"><a class="button button--btn-container-theme" href="blank.html" >заказать</a></td>
                   </tr>
                   <tr class="add-component__tr">
-                    <td class="add-component__td"><h3 class="division-headline division-headline_add-component-theme">молоко</h3></td>
+                    <td class="add-component__td"><h3 class="division-headline division-headline--add-component-theme">молоко</h3></td>
                     <td class="add-component__td"><p>1 литр</p></td>
                     <td class="add-component__td"><p>100 р.</p></td>
-                    <td class="add-component__td"><a class="button button_btn-container-theme" href="blank.html" >заказать</a></td>
+                    <td class="add-component__td"><a class="button button--btn-container-theme" href="blank.html" >заказать</a></td>
                   </tr>
                   <tr class="add-component__tr">
-                    <td class="add-component__td"><h3 class="division-headline division-headline_add-component-theme">витамины</h3></td>
+                    <td class="add-component__td"><h3 class="division-headline division-headline--add-component-theme">витамины</h3></td>
                     <td class="add-component__td"><p>1 упаковка<wbr> (30 г)</p></td>
                     <td class="add-component__td"><p>300 р.</p></td>
-                    <td class="add-component__td"><a class="button button_btn-container-theme" href="blank.html" >заказать</a></td>
+                    <td class="add-component__td"><a class="button button--btn-container-theme" href="blank.html" >заказать</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -410,9 +410,9 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__contacts">
-        <div class="container container_address-card-theme">
-          <div class="cell address-card cell_address-card">
-              <h3 class="division-headline division-headline_address-card-theme">Приглашаем к сотрудничеству дилеров!</h3>
+        <div class="container container--address-card-theme container--address-card-inner">
+          <div class="cell address-card cell--address-card">
+              <h3 class="division-headline division-headline--address-card-theme">Приглашаем <br />к сотрудничеству дилеров!</h3>
               <p class="address-card__text">
                 <a class="address-card__link" href="https://earth.google.com/earth/d/1EmzE32nJNXyGby7pe_Gw-vpLbY2DAbhk?usp=sharing" target="blanc">Открыть карту<br /></a>
                 ул. Большая Конюшенная, д. 19/8 <span class="address-card__last-line">Санкт-Петербург</span>
@@ -423,16 +423,16 @@
           <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6033013998237!2d30.32136833545218!3d59.938724543317974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbg!4v1628524693742!5m2!1sru!2sbg" width="320" height="362" allowfullscreen="" loading="lazy">
           </iframe>
         </div>
-        <div class="container container_main-footer-theme">
+        <div class="container container--main-footer-theme">
           <div class="cell main-footer-logo">
-            <a class="main-footer-logo__logo-text">
+            <a class="main-footer-logo__logo-text" href="index.html">
               <img src="img/logo_cat-energy_footer.svg" width="128" height="24" alt="Логотекст «Кэт энерджи»">
             </a>
           </div>
-          <div class="cell cell_social-theme">
+          <div class="cell cell--social-theme">
             <ul class="social-list">
               <li class="social-list__item">
-                <a class="social-link social-link_vkontakte" href="https://vk.com/htmlacademy">
+                <a class="social-link social-link--vkontakte" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Мы в Вконтакте</span>
                   <svg width="23" height="16">
                     <use xlink:href="img/sprite.svg#vk"></use>
@@ -440,7 +440,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-link social-link_instagram" href="https://www.instagram.com/htmlacademy">
+                <a class="social-link social-link--instagram" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Мы в Инстаграме</span>
                   <svg width="16" height="16">
                     <use xlink:href="img/sprite.svg#insta"></use>
@@ -448,7 +448,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-link social-link_facebook" href="https://www.facebook.com/htmlacademy">
+                <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                   <svg width="10" height="16">
                     <use xlink:href="img/sprite.svg#fb"></use>
